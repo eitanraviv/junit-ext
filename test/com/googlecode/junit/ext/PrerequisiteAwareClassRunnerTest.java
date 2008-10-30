@@ -5,15 +5,15 @@ import org.junit.Before;
 import static org.junit.Assert.assertThat;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runner.notification.RunListener;
-import org.junit.runner.Result;
 import org.junit.runner.Description;
+import org.junit.runner.RunWith;
 import static org.hamcrest.core.Is.is;
 import static com.googlecode.junit.ext.PrerequisiteChecker.NOT_SATISFIED;
-import static com.googlecode.junit.ext.PrerequisiteChecker.MAC;
 
 public class PrerequisiteAwareClassRunnerTest {
     private TestCountListener countListener;
     private RunNotifier runNotifier;
+
     @Before
     public void setUp() {
         runNotifier = new RunNotifier();
@@ -30,7 +30,7 @@ public class PrerequisiteAwareClassRunnerTest {
 
     @Test
     public void shouldOnlyRunOneTestCaseInTheSuite() throws Exception {
-        PrerequisiteAwareClassRunner awareClassRunner = new PrerequisiteAwareClassRunner(TestSuiteOnDifferentOS.class);
+        PrerequisiteAwareClassRunner awareClassRunner = new PrerequisiteAwareClassRunner(TestCasesOnDifferentOS.class);
         awareClassRunner.run(runNotifier);
         assertThat(countListener.count(), is(1));
     }
@@ -50,6 +50,7 @@ public class PrerequisiteAwareClassRunnerTest {
     }
 
 
+    @RunWith(PrerequisiteAwareClassRunner.class)
     public static class TestShouldNeverRun {
         @Test
         @Prerequisite(NOT_SATISFIED)
@@ -58,20 +59,4 @@ public class PrerequisiteAwareClassRunnerTest {
         }
     }
 
-    public static class TestSuiteOnDifferentOS {
-        @Test
-        @Prerequisite(MAC)
-        public void shouldRunOnMac() throws Exception {
-        }
-
-        @Test
-        @Prerequisite(PrerequisiteChecker.WINDOWS)
-        public void shouldRunOnWindows() throws Exception {
-        }
-
-        @Test
-        @Prerequisite(PrerequisiteChecker.LINUX)
-        public void shouldRunOnLinux() throws Exception {
-        }
-    }
 }
