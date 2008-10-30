@@ -1,36 +1,38 @@
 package com.googlecode.junit.ext;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.junit.internal.runners.InitializationError;
 import org.junit.internal.runners.JUnit4ClassRunner;
-import com.googlecode.junit.ext.Prerequisite;
+import org.junit.runner.notification.RunNotifier;
+import org.junit.runner.Description;
+
+import java.lang.reflect.Method;
 
 public class PrerequisiteAwareClassRunner extends JUnit4ClassRunner {
     public PrerequisiteAwareClassRunner(Class<?> klass) throws InitializationError {
         super(klass);
     }
 
-    protected List<Method> getTestMethods() {
-        List<Method> methods = super.getTestMethods();
-        return filterMethods(methods);
+
+    protected void runMethods(RunNotifier notifier) {
+        for (Method method : this.getTestMethods()) {
+            if (isPrereuisitSatisfied(method)) {
+                invokeTestMethod(method, notifier);
+            } else {
+                Description testDescription = Description.createTestDescription(this.getTestClass().getJavaClass(),
+                        method.getName());
+                notifier.fireTestIgnored(testDescription);
+            }
+
+        }
     }
 
-    public static List<Method> filterMethods(List<Method> methods) {
-        List<Method> filteredMethod = new ArrayList();
-        for (Method method : methods) {
-            Prerequisite resource = method.getAnnotation(Prerequisite.class);
-            if (resource == null) {
-                filteredMethod.add(method);
-            } else {
-                PrerequisiteChecker prerequisiteChecker = resource.value();
-                if (prerequisiteChecker.isSatisfied()) {
-                    filteredMethod.add(method);
-                }
-            }
+    public boolean isPrereuisitSatisfied(Method method) {
+        Prerequisite resource = method.getAnnotation(Prerequisite.class);
+        if (resource == null) {
+            return true;
         }
-        return filteredMethod;
+        PrerequisiteChecker prerequisiteChecker = resource.value();
+        return prerequisiteChecker.isSatisfied();
     }
+
 }
