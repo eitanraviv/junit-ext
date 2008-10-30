@@ -16,11 +16,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteAwareClassRunnerTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteAwareClassRunnerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/TestCasesOnDifferentOS.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/Prerequisite.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/Prerequisite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.iws" afterPath="$PROJECT_DIR$/junit-ext.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteAwareClassRunnerTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteAwareClassRunnerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnTargetAppExist.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/PrerequisiteChecker.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/PrerequisiteAwareClassRunner.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/PrerequisiteAwareClassRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.iml" afterPath="$PROJECT_DIR$/junit-ext.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/NeverSatisfiedPrerequisite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/Checker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/AppsInstalledChecker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/OSChecker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestShouldNeverRun.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnDifferentOS.java" />
     </list>
     <ignored path="junit-ext.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,31 +91,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JUnit38ClassRunner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/internal/runners/JUnit38ClassRunner.java">
+      <file leaf-file-name="AppsInstalledChecker.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/AppsInstalledChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="13" selection-start="802" selection-end="802" vertical-scroll-proportion="0.09703504">
+            <state line="2" column="13" selection-start="48" selection-end="48" vertical-scroll-proportion="0.06469002">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrerequisiteAwareClassRunnerTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteAwareClassRunnerTest.java">
+      <file leaf-file-name="Prerequisite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/Prerequisite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="423" selection-end="423" vertical-scroll-proportion="-0.06469002">
+            <state line="4" column="18" selection-start="219" selection-end="219" vertical-scroll-proportion="0.12938005">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCasesOnDifferentOS.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/TestCasesOnDifferentOS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="44" selection-start="200" selection-end="200" vertical-scroll-proportion="0.19407009">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -115,7 +112,7 @@
       <file leaf-file-name="PrerequisiteAwareClassRunner.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/PrerequisiteAwareClassRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.6469003">
+            <state line="10" column="13" selection-start="316" selection-end="316" vertical-scroll-proportion="-0.6495957">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,19 +120,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunNotifier.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/runner/notification/RunNotifier.java">
+      <file leaf-file-name="PrerequisiteAwareClassRunnerTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteAwareClassRunnerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="16" selection-start="3031" selection-end="3031" vertical-scroll-proportion="0.40161726">
+            <state line="33" column="57" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.16981132">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestShouldNeverRun.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestShouldNeverRun.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="208" selection-end="253" vertical-scroll-proportion="0.2264151">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCasesOnDifferentOS.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnDifferentOS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="74" selection-start="559" selection-end="559" vertical-scroll-proportion="0.5175202">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCasesOnTargetAppExist.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnTargetAppExist.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="699" selection-end="699" vertical-scroll-proportion="0.61455524">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeverSatisfiedPrerequisite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/NeverSatisfiedPrerequisite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.12938005">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Description.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/runner/Description.java">
+      <file leaf-file-name="Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="51" selection-start="2776" selection-end="2797" vertical-scroll-proportion="1.0808625">
+            <state line="42" column="12" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.8652291">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OSChecker.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/OSChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="48" selection-end="48" vertical-scroll-proportion="0.06469002">
               <folding />
             </state>
           </provider>
@@ -231,6 +281,32 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/twer/Workspace/junit-ext/test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/twer/Workspace/junit-ext/test/com/googlecode/junit/ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/twer/Workspace/junit-ext/test/com/googlecode/junit/ext/helpers" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/twer/Workspace/junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/Users/twer/Workspace/junit-ext/src" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
@@ -267,18 +343,23 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.googlecode.junit.ext" />
+    </key>
+  </component>
   <component name="RubyDocSettings">
     <RUBY_DOC NAME="DEFAULTS" VALUE="true" />
     <RUBY_DOC NAME="NUMBER" VALUE="0" />
   </component>
-  <component name="RunManager" selected="JUnit.TestCasesOnDifferentOS">
-    <tempConfiguration default="false" name="TestCasesOnDifferentOS" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+  <component name="RunManager" selected="JUnit.PrerequisiteAwareClassRunnerTest">
+    <tempConfiguration default="false" name="PrerequisiteAwareClassRunnerTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <pattern value="com.googlecode.junit.ext.*" />
       <module name="junit-ext" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.googlecode.junit.ext" />
-      <option name="MAIN_CLASS_NAME" value="com.googlecode.junit.ext.TestCasesOnDifferentOS" />
+      <option name="MAIN_CLASS_NAME" value="com.googlecode.junit.ext.PrerequisiteAwareClassRunnerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -293,6 +374,9 @@
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
     </tempConfiguration>
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby test">
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
@@ -416,8 +500,8 @@
       <module name="junit-ext" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.googlecode.junit.ext" />
-      <option name="MAIN_CLASS_NAME" value="com.googlecode.junit.ext.TestCasesOnDifferentOS" />
+      <option name="PACKAGE_NAME" value="com.googlecode.junit.ext.helpers" />
+      <option name="MAIN_CLASS_NAME" value="com.googlecode.junit.ext.helpers.TestCasesOnDifferentOS" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -433,8 +517,9 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.DummyTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PrerequisiteAwareClassRunnerTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -578,37 +663,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/Prerequisite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="220" selection-end="220" vertical-scroll-proportion="0.10690423">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.4.jar!/org/junit/runner/notification/RunListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="167" selection-end="167" vertical-scroll-proportion="0.10690423">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/junit-4.4.jar!/org/junit/internal/runners/JUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="4" selection-start="803" selection-end="803" vertical-scroll-proportion="0.38709676">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/PrerequisiteChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="47" selection-end="47" vertical-scroll-proportion="0.053452116">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/internal/runners/JUnit38ClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="802" selection-end="802" vertical-scroll-proportion="0.09703504">
           <folding />
         </state>
       </provider>
@@ -620,9 +677,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/runner/Description.java">
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/internal/runners/JUnit38ClassRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="51" selection-start="2776" selection-end="2797" vertical-scroll-proportion="1.0808625">
+        <state line="23" column="26" selection-start="955" selection-end="955" vertical-scroll-proportion="0.16172507">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/Checker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="52" selection-end="52" vertical-scroll-proportion="0.06469002">
           <folding />
         </state>
       </provider>
@@ -634,18 +698,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/PrerequisiteAwareClassRunner.java">
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/runner/Description.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.6469003">
+        <state line="57" column="51" selection-start="2776" selection-end="2797" vertical-scroll-proportion="1.0808625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/OSChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="48" selection-end="48" vertical-scroll-proportion="0.06469002">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="12" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.8652291">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/NeverSatisfiedPrerequisite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.12938005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/AppsInstalledChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="48" selection-end="48" vertical-scroll-proportion="0.06469002">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/Prerequisite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="18" selection-start="219" selection-end="219" vertical-scroll-proportion="0.12938005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnDifferentOS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="74" selection-start="559" selection-end="559" vertical-scroll-proportion="0.5175202">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/TestCasesOnDifferentOS.java">
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestShouldNeverRun.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="200" selection-end="200" vertical-scroll-proportion="0.19407009">
+        <state line="7" column="0" selection-start="208" selection-end="253" vertical-scroll-proportion="0.2264151">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/PrerequisiteAwareClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="316" selection-end="316" vertical-scroll-proportion="-0.6495957">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -654,8 +769,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteAwareClassRunnerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="423" selection-end="423" vertical-scroll-proportion="-0.06469002">
-          <folding />
+        <state line="33" column="57" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.16981132">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnTargetAppExist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="699" selection-end="699" vertical-scroll-proportion="0.61455524">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -6,6 +6,7 @@ import org.junit.runner.notification.RunNotifier;
 import org.junit.runner.Description;
 
 import java.lang.reflect.Method;
+import java.lang.reflect.Constructor;
 
 public class PrerequisiteAwareClassRunner extends JUnit4ClassRunner {
     public PrerequisiteAwareClassRunner(Class<?> klass) throws InitializationError {
@@ -22,7 +23,6 @@ public class PrerequisiteAwareClassRunner extends JUnit4ClassRunner {
                         method.getName());
                 notifier.fireTestIgnored(testDescription);
             }
-
         }
     }
 
@@ -31,8 +31,26 @@ public class PrerequisiteAwareClassRunner extends JUnit4ClassRunner {
         if (resource == null) {
             return true;
         }
-        PrerequisiteChecker prerequisiteChecker = resource.value();
-        return prerequisiteChecker.isSatisfied();
+        Class<? extends Checker> prerequisiteChecker = resource.checker();
+        try {
+            String argument = resource.arguments();
+            Checker checker;
+            if (isArgumentNotProvided(argument)) {
+                checker = prerequisiteChecker.newInstance();
+            } else {
+                Constructor<? extends Checker> constructor = prerequisiteChecker.getConstructor(String.class);
+                checker = constructor.newInstance(argument);
+                return checker.isExist();
+            }
+
+            return checker.isExist();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private boolean isArgumentNotProvided(String argument) {
+        return argument == null || argument.trim().length() == 0;
     }
 
 }
