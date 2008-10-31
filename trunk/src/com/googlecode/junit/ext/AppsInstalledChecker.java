@@ -7,7 +7,7 @@ public class AppsInstalledChecker implements Checker {
         this.command = command;
     }
 
-    public boolean isExist() {
+    public boolean satisfy() {
         try {
             Runtime.getRuntime().exec(this.command);
             return true;

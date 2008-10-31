@@ -40,10 +40,8 @@ public class PrerequisiteAwareClassRunner extends JUnit4ClassRunner {
             } else {
                 Constructor<? extends Checker> constructor = prerequisiteChecker.getConstructor(String.class);
                 checker = constructor.newInstance(argument);
-                return checker.isExist();
             }
-
-            return checker.isExist();
+            return checker.satisfy();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
