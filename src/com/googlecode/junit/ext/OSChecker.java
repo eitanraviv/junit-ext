@@ -11,7 +11,7 @@ public class OSChecker implements Checker {
         this.targetOS = targetOS;
     }
 
-    public boolean isExist() {
+    public boolean satisfy() {
         String osName = System.getProperty("os.name");
         return osName.toLowerCase().contains(targetOS);
     }
