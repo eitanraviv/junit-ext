@@ -11,6 +11,7 @@ public class TestCasesOnDifferentOS {
     @Test
     @Prerequisite(checker = OSChecker.class, arguments = OSChecker.MAC)
     public void shouldRunOnMac() throws Exception {
+
     }
 
     @Test
