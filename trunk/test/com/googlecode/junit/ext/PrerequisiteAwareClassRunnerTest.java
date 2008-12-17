@@ -3,6 +3,7 @@ package com.googlecode.junit.ext;
 import com.googlecode.junit.ext.helpers.TestCasesOnDifferentOS;
 import com.googlecode.junit.ext.helpers.TestShouldNeverRun;
 import com.googlecode.junit.ext.helpers.TestCasesOnTargetAppExist;
+import com.googlecode.junit.ext.helpers.TestCasesOnHttpServer;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import org.junit.Before;
@@ -51,6 +52,16 @@ public class PrerequisiteAwareClassRunnerTest {
 
         assertThat(countListener.count(), is(installedAppsCount));
         assertThat(testResultListener.isPassed(), is(false));
+    }
+
+    @Test
+    public void shouldOnlyRunTestCasesWhenURLIsReachleable() throws Exception {
+        PrerequisiteAwareClassRunner awareClassRunner = new PrerequisiteAwareClassRunner(
+                TestCasesOnHttpServer.class);
+        awareClassRunner.run(runNotifier);
+
+        assertThat(countListener.count(), is(1));
+        assertThat(testResultListener.isPassed(), is(true));
     }
 
     private int getAppsInstalledCount() {

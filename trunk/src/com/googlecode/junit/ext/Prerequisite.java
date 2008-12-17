@@ -5,6 +5,6 @@ package com.googlecode.junit.ext;
 public @interface Prerequisite {
     Class<? extends Checker> checker();
 
-    String arguments() default "";
+    String[] arguments() default {};
 }
 
