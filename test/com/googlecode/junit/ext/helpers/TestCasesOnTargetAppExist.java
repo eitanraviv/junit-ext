@@ -4,9 +4,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import com.googlecode.junit.ext.Prerequisite;
 import com.googlecode.junit.ext.AppsInstalledChecker;
-import com.googlecode.junit.ext.PrerequisiteAwareClassRunner;
+import com.googlecode.junit.ext.JunitExtRunner;
 
-@RunWith(PrerequisiteAwareClassRunner.class)
+@RunWith(JunitExtRunner.class)
 public class TestCasesOnTargetAppExist {
     @Test
     @Prerequisite(checker = AppsInstalledChecker.class, arguments = "ant -version")

@@ -193,12 +193,16 @@
         </junit>
     </target>
 
+    <property name="version" value="0.6"/>
     <target name="jar.module.junit-ext">
-        <jar destfile="${target}/junit-ext.jar">
+        <jar destfile="${target}/junit-ext-${version}.jar">
             <fileset dir="${junit-ext.output.dir}">
                 <include name="**/*.class"/>
             </fileset>
         </jar>
+    </target>
+
+    <target name="jar" depends="jar.module.junit-ext">
     </target>
 
     <target name="clean.module.junit-ext" description="cleanup module">
