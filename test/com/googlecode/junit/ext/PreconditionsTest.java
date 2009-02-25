@@ -48,14 +48,12 @@ public class PreconditionsTest {
     public void shouldFailedTestAndStopRunningAtFailedPreconditions() throws Exception {
         JunitExtRunner awareClassRunner = new JunitExtRunner(
                 ShouldFailedTestAndStopRunningAtFailedPreconditionsTest.class);
-        try {
-            awareClassRunner.run(runNotifier);
-            fail("should throw exception");
-        } catch (Exception e) {
-        }
+
+        awareClassRunner.run(runNotifier);
+
         Map map = ShouldFailedTestAndStopRunningAtFailedPreconditionsTest.staticContext;
 
-
+        assertThat(testResultListener.isPassed(), is(false));
         assertThat(map.containsKey("FailedToSetUp#setup"), is(true));
         assertThat(map.containsKey("FailedToSetUp#teardown"), is(true));
         assertThat(map.containsKey("ShouldFailedTestAndStopRunningAtFailedPreconditionsTest" +
@@ -68,13 +66,11 @@ public class PreconditionsTest {
     public void shouldFailedTestAndContinueRanAllTeardownTest() throws InitializationError {
         JunitExtRunner awareClassRunner = new JunitExtRunner(
                 ShouldFailedTestAndContinueRanAllTeardownTest.class);
-        try {
-            awareClassRunner.run(runNotifier);
-            fail("should throw exception");
-        } catch (Exception e) {
-        }
+        awareClassRunner.run(runNotifier);
+
         Map map = ShouldFailedTestAndContinueRanAllTeardownTest.staticContext;
 
+        assertThat(testResultListener.isPassed(), is(false));
         assertThat(map.containsKey("FailedToTearDown#setup"), is(true));
         assertThat(map.containsKey("FailedToTearDown#teardown"), is(true));
         assertThat(map.containsKey("ShouldFailedTestAndContinueRanAllTeardownTest" +
