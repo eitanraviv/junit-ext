@@ -34,6 +34,9 @@ public class JunitExtRunner extends JUnit4ClassRunner {
                 if (arePreconditionsSetUpSucceed(failedAt)) {
                     TestMethod testMethod = wrapMethod(method);
                     new MethodRoadie(test, testMethod, notifier, description).run();
+                } else {
+                    notifier.fireTestStarted(description);
+                    notifier.fireTestStarted(description);
                 }
             } finally {
                 failedAt = arePreconditionsSetUpSucceed(failedAt) ? list.size() : failedAt;
