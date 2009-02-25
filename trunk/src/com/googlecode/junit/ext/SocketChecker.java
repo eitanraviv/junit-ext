@@ -1,7 +1,6 @@
 package com.googlecode.junit.ext;
 
 import java.net.Socket;
-import java.io.IOException;
 
 public class SocketChecker implements Checker {
     private String host;
@@ -9,7 +8,7 @@ public class SocketChecker implements Checker {
 
     public SocketChecker(String[] args) {
         this.host = args[0];
-        this.port = Integer.valueOf(args[0]);
+        this.port = Integer.valueOf(args[1]);
     }
 
     public boolean satisfy() {
