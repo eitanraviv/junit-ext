@@ -22,8 +22,9 @@ public class JunitExtRunner extends JUnit4ClassRunner {
     protected void invokeTestMethod(Method method, RunNotifier notifier) {
         if (isPrereuisitSatisfied(method)) {
             List<Precondition> list = null;
-            Object test = null;
+
             Description description = null;
+            Object test = null;
             try {
                 description = methodDescription(method);
                 try {
@@ -35,26 +36,41 @@ public class JunitExtRunner extends JUnit4ClassRunner {
                     notifier.testAborted(description, e);
                     return;
                 }
-                System.out.println(test);
                 list = invokeAllPrecondtions(method, test);
             } catch (Exception e) {
                 e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
             }
+            Exception possibleException = null;
+            int failedAt = -1;
+            int currentIndex = 0;
             for (Precondition precondition : list) {
-                precondition.setup();
+                currentIndex++;
+                try {
+                    precondition.setup();
+                } catch (Exception e) {
+                    possibleException = e;
+                    failedAt = currentIndex;
+                    break;
+                }
             }
             try {
-                TestMethod testMethod = wrapMethod(method);
-                System.out.println(test);
-                new MethodRoadie(test, testMethod, notifier, description).run();
+                if (failedAt == -1) {
+                    TestMethod testMethod = wrapMethod(method);
+                    new MethodRoadie(test, testMethod, notifier, description).run();
+                }
             } finally {
-                for (Precondition precondition : list) {
+                failedAt = failedAt == -1 ? list.size() : failedAt;
+                for (int i = 0; i < failedAt; i++) {
                     try {
+                        Precondition precondition = list.get(i);
                         precondition.teardown();
                     } catch (Exception e) {
-
+                        possibleException = e;
                     }
                 }
+            }
+            if (possibleException != null) {
+                throw new RuntimeException(possibleException);
             }
         } else {
             Description testDescription = Description.createTestDescription(this.getTestClass().getJavaClass(),

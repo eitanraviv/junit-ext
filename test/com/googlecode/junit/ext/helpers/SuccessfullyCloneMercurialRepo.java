@@ -4,11 +4,11 @@ import com.googlecode.junit.ext.Precondition;
 
 import java.util.Map;
 
-public class CheckinFilesToHg implements Precondition {
+public class SuccessfullyCloneMercurialRepo implements Precondition {
     private Map obj;
     private String dir;
 
-    public CheckinFilesToHg(Object obj) {
+    public SuccessfullyCloneMercurialRepo(Object obj) {
         this.obj = (Map) obj;
     }
 
