@@ -8,10 +8,15 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assume.assumeThat;
 import org.junit.runner.Description;
 import org.junit.runner.notification.RunListener;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runner.notification.Failure;
+
+import java.io.File;
+
+import static junit.framework.Assert.fail;
 
 public class PrerequisiteAwareClassRunnerTest {
     private TestCountListener countListener;
@@ -29,7 +34,7 @@ public class PrerequisiteAwareClassRunnerTest {
 
     @Test
     public void shouldNotRunAnyMethod() throws Exception {
-        PrerequisiteAwareClassRunner awareClassRunner = new PrerequisiteAwareClassRunner(TestShouldNeverRun.class);
+        JunitExtRunner awareClassRunner = new JunitExtRunner(TestShouldNeverRun.class);
         awareClassRunner.run(runNotifier);
         assertThat(countListener.count(), is(0));
         assertThat(testResultListener.isPassed(), is(true));
@@ -37,7 +42,7 @@ public class PrerequisiteAwareClassRunnerTest {
 
     @Test
     public void shouldOnlyRunTestCaseAssociatedWithOS() throws Exception {
-        PrerequisiteAwareClassRunner awareClassRunner = new PrerequisiteAwareClassRunner(TestCasesOnDifferentOS.class);
+        JunitExtRunner awareClassRunner = new JunitExtRunner(TestCasesOnDifferentOS.class);
         awareClassRunner.run(runNotifier);
         assertThat(countListener.count(), is(1));
         assertThat(testResultListener.isPassed(), is(true));
@@ -46,7 +51,7 @@ public class PrerequisiteAwareClassRunnerTest {
     @Test
     public void shouldOnlyRunTestCasesWhenAssocatiedAppsInstalled() throws Exception {
         int installedAppsCount = getAppsInstalledCount();
-        PrerequisiteAwareClassRunner awareClassRunner = new PrerequisiteAwareClassRunner(
+        JunitExtRunner awareClassRunner = new JunitExtRunner(
                 TestCasesOnTargetAppExist.class);
         awareClassRunner.run(runNotifier);
 
@@ -56,7 +61,7 @@ public class PrerequisiteAwareClassRunnerTest {
 
     @Test
     public void shouldOnlyRunTestCasesWhenURLIsReachleable() throws Exception {
-        PrerequisiteAwareClassRunner awareClassRunner = new PrerequisiteAwareClassRunner(
+        JunitExtRunner awareClassRunner = new JunitExtRunner(
                 TestCasesOnHttpServer.class);
         awareClassRunner.run(runNotifier);
 
@@ -98,6 +103,13 @@ public class PrerequisiteAwareClassRunnerTest {
         public void testFinished(Description description) throws Exception {
             count++;
         }
+    }
+
+    @Test
+    public void should() {
+        assumeThat(File.separatorChar, is('\\'));
+        System.out.println("1111");
+        fail();
     }
 
     private class TestResultListener extends RunListener {
