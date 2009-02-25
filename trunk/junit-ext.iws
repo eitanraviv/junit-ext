@@ -16,18 +16,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteAwareClassRunnerTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldFailedTestAndStopRunningAtFailedPreconditionsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/PreconditionsTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/PreconditionsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.iws" afterPath="$PROJECT_DIR$/junit-ext.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToSetUp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToTearDown.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldFailedTestAndContinueRanAllTeardownTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/SetUpHgRepo.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/SuccessfullyRan.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/PreconditionsTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnDifferentOS.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnDifferentOS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldInvokeAllSetupsAndTeardownsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/CheckinFilesToHg.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/SuccessfullyCloneMercurialRepo.java" />
     </list>
     <ignored path="junit-ext.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,88 +76,7 @@
     <favorites_list name="junit-ext" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="FailedToSetUp.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToSetUp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PreconditionsTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PreconditionsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="0" selection-start="3593" selection-end="3593" vertical-scroll-proportion="0.7033898">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShouldFailedTestAndContinueRanAllTeardownTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldFailedTestAndContinueRanAllTeardownTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="40" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FailedToTearDown.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToTearDown.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JunitExtRunner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShouldFailedTestAndStopRunningAtFailedPreconditionsTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldFailedTestAndStopRunningAtFailedPreconditionsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrerequisiteTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShouldInvokeAllSetupsAndTeardownsTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldInvokeAllSetupsAndTeardownsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="394" selection-end="409" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -195,7 +105,76 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectPane">
-    <subPane />
+    <subPane>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="junit-ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ext" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </subPane>
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
@@ -478,14 +457,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27469358" sideWeight="0.5324503" order="0" side_tool="false" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27469358" sideWeight="0.5324503" order="0" side_tool="false" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57880795" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" />
@@ -578,34 +557,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="76" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/Preconditions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="35" selection-end="200" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/Prerequisite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="35" selection-end="200" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/SuccessfullyCloneMercurialRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="34" selection-start="243" selection-end="249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/SuccessfullyRan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="13" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
@@ -620,55 +571,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/internal/runners/JUnit4ClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="16" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldInvokeAllSetupsAndTeardownsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="394" selection-end="409" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToSetUp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldFailedTestAndStopRunningAtFailedPreconditionsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToTearDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -682,12 +587,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PreconditionsTest.java">
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToTearDown.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="3593" selection-end="3593" vertical-scroll-proportion="0.7033898">
+        <state line="14" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldFailedTestAndStopRunningAtFailedPreconditionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldInvokeAllSetupsAndTeardownsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="35" selection-start="394" selection-end="409" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="2035" selection-end="2035" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PreconditionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="0" selection-start="4028" selection-end="4028" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/internal/runners/JUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="19" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/internal/runners/ClassRoadie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="41" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/internal/runners/MethodRoadie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="17" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.4-src.jar!/org/junit/internal/runners/FailedBefore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="14" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home/src.jar!/src/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="619" column="16" selection-start="25763" selection-end="25763" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home/src.jar!/src/java/lang/RuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="0" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>

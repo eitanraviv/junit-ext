@@ -5,6 +5,7 @@ import org.junit.internal.runners.JUnit4ClassRunner;
 import org.junit.internal.runners.TestMethod;
 import org.junit.internal.runners.MethodRoadie;
 import org.junit.runner.notification.RunNotifier;
+import org.junit.runner.notification.Failure;
 import org.junit.runner.Description;
 
 import java.lang.reflect.Method;
@@ -21,56 +22,34 @@ public class JunitExtRunner extends JUnit4ClassRunner {
 
     protected void invokeTestMethod(Method method, RunNotifier notifier) {
         if (isPrereuisitSatisfied(method)) {
-            List<Precondition> list = null;
-
-            Description description = null;
-            Object test = null;
-            try {
-                description = methodDescription(method);
-                try {
-                    test = createTest();
-                } catch (InvocationTargetException e) {
-                    notifier.testAborted(description, e.getCause());
-                    return;
-                } catch (Exception e) {
-                    notifier.testAborted(description, e);
-                    return;
-                }
-                list = invokeAllPrecondtions(method, test);
-            } catch (Exception e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            Description description = methodDescription(method);
+            Object test = createTest(notifier, description);
+            if (test == null) {
+                return;
             }
-            Exception possibleException = null;
-            int failedAt = -1;
-            int currentIndex = 0;
-            for (Precondition precondition : list) {
-                currentIndex++;
-                try {
-                    precondition.setup();
-                } catch (Exception e) {
-                    possibleException = e;
-                    failedAt = currentIndex;
-                    break;
-                }
-            }
+            List<Precondition> list = createPrecondtions(method, test);
+            List<Exception> possibleExceptions = new ArrayList<Exception>();
+            int failedAt = invokeSetupForPreconditions(list, possibleExceptions);
             try {
-                if (failedAt == -1) {
+                if (arePreconditionsSetUpSucceed(failedAt)) {
                     TestMethod testMethod = wrapMethod(method);
                     new MethodRoadie(test, testMethod, notifier, description).run();
                 }
             } finally {
-                failedAt = failedAt == -1 ? list.size() : failedAt;
+                failedAt = arePreconditionsSetUpSucceed(failedAt) ? list.size() : failedAt;
                 for (int i = 0; i < failedAt; i++) {
                     try {
                         Precondition precondition = list.get(i);
                         precondition.teardown();
                     } catch (Exception e) {
-                        possibleException = e;
+                        possibleExceptions.add(e);
                     }
                 }
             }
-            if (possibleException != null) {
-                throw new RuntimeException(possibleException);
+            if (!possibleExceptions.isEmpty()) {
+                for (Exception e : possibleExceptions) {
+                    notifier.fireTestFailure(new Failure(description, e));
+                }
             }
         } else {
             Description testDescription = Description.createTestDescription(this.getTestClass().getJavaClass(),
@@ -79,7 +58,27 @@ public class JunitExtRunner extends JUnit4ClassRunner {
         }
     }
 
-    private List<Precondition> invokeAllPrecondtions(Method method, Object test) {
+    private boolean arePreconditionsSetUpSucceed(int failedAt) {
+        return failedAt == -1;
+    }
+
+    private int invokeSetupForPreconditions(List<Precondition> list, List<Exception> possibleExceptions) {
+        int failedAt = -1;
+        int currentIndex = 0;
+        for (Precondition precondition : list) {
+            currentIndex++;
+            try {
+                precondition.setup();
+            } catch (Exception e) {
+                possibleExceptions.add(e);
+                failedAt = currentIndex;
+                break;
+            }
+        }
+        return failedAt;
+    }
+
+    private List<Precondition> createPrecondtions(Method method, Object test) {
         Class<?> declaringClass = method.getDeclaringClass();
         Field[] declaredFields = declaringClass.getDeclaredFields();
         Object context = null;
@@ -145,6 +144,26 @@ public class JunitExtRunner extends JUnit4ClassRunner {
 
     private boolean isArgumentNotProvided(String[] argument) {
         return argument == null || argument.length == 0;
+    }
+
+
+    public Object createTest(RunNotifier notifier, Description description) {
+        Object test = null;
+        try {
+            try {
+                test = createTest();
+            } catch (InvocationTargetException e) {
+                notifier.testAborted(description, e.getCause());
+                return null;
+            } catch (Exception e) {
+                notifier.testAborted(description, e);
+                return null;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return test;
     }
 
 }
