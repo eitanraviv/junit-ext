@@ -26,5 +26,6 @@ public class ShouldWorkWithSpringTest {
     @Test
     @Preconditions({FailedToTearDown.class, SuccessfullyRan.class})
     public void shouldFailedTestAndContinueRanAllTeardown() {
+        System.out.println(service);
     }
 }

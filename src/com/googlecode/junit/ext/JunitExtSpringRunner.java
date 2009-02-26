@@ -1,19 +1,17 @@
 package com.googlecode.junit.ext;
 
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.junit.internal.runners.InitializationError;
-import org.junit.internal.runners.TestMethod;
-import org.junit.internal.runners.MethodRoadie;
-import org.junit.runner.notification.RunNotifier;
-import org.junit.runner.notification.Failure;
 import org.junit.runner.Description;
+import org.junit.runner.notification.Failure;
+import org.junit.runner.notification.RunNotifier;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Field;
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
-import java.util.List;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.List;
 
 public class JunitExtSpringRunner extends SpringJUnit4ClassRunner {
     public JunitExtSpringRunner(Class<?> aClass) throws InitializationError {
@@ -21,13 +19,21 @@ public class JunitExtSpringRunner extends SpringJUnit4ClassRunner {
     }
 
     protected void invokeTestMethod(Method method, RunNotifier notifier) {
+
         if (isPrereuisitSatisfied(method)) {
             Description description = methodDescription(method);
             Object test = createTest(notifier, description);
             if (test == null) {
                 return;
             }
-            List<Precondition> list = createPrecondtions(method, test);
+            List<Precondition> list  = createPrecondtions(method, test);
+            for (Precondition precondition : list) {
+                try {
+                    this.getTestContextManager().prepareTestInstance(precondition);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
             List<Exception> possibleExceptions = new ArrayList<Exception>();
             int failedAt = invokeSetupForPreconditions(list, possibleExceptions);
             try {
