@@ -16,6 +16,7 @@ public class FailedToTearDown implements Precondition {
 
     public void setup() {
         this.context.put("FailedToTearDown#setup", true);
+        System.out.println(service);
     }
 
     public void teardown() {

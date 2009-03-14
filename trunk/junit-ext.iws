@@ -16,21 +16,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/HTTPChecker.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/HTTPChecker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.iws" afterPath="$PROJECT_DIR$/junit-ext.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.iml" afterPath="$PROJECT_DIR$/junit-ext.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestShouldNeverRun.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestShouldNeverRun.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCaseTwoArguments.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCaseTwoArguments.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnHttpServer.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnHttpServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnTargetAppExist.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnTargetAppExist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnDifferentOS.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnDifferentOS.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/Prerequisite.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/RunIf.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldWorkWithSpringTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldWorkWithSpringTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/PrerequisiteTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/RunIfTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtSpringRunner.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtSpringRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.iws" afterPath="$PROJECT_DIR$/junit-ext.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToTearDown.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToTearDown.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.ipr" afterPath="$PROJECT_DIR$/junit-ext.ipr" />
     </list>
     <ignored path="junit-ext.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,73 +105,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="SampleService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/SampleService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="15" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FailedToTearDown.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToTearDown.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="34" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShouldWorkWithSpringTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldWorkWithSpringTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="30" selection-start="655" selection-end="655" vertical-scroll-proportion="0.48387095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FailedToSetUp.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToSetUp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SuccessfullyCloneMercurialRepo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/SuccessfullyCloneMercurialRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Preconditions.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/Preconditions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShouldWorkWithSpringTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldWorkWithSpringTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="38" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCasesOnTargetAppExist.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnTargetAppExist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="16" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JunitExtSpringRunnerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/JunitExtSpringRunnerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PreconditionsTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PreconditionsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="747" selection-end="747" vertical-scroll-proportion="0.13597734">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RunIfTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/RunIfTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCasesOnHttpServer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnHttpServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="25" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HTTPChecker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/HTTPChecker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="76" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+            <state line="5" column="21" selection-start="255" selection-end="267" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,16 +162,7 @@
       <file leaf-file-name="JunitExtRunner.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1425" selection-end="1425" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCasesOnDifferentOS.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnDifferentOS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="67" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+            <state line="100" column="20" selection-start="3996" selection-end="3996" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -386,19 +347,19 @@
     <RUBY_DOC NAME="DEFAULTS" VALUE="true" />
     <RUBY_DOC NAME="NUMBER" VALUE="0" />
   </component>
-  <component name="RunManager" selected="JUnit.RunIfTest.shouldOnlyRunTestCasesWhenURLIsReachleable">
-    <tempConfiguration default="false" name="RunIfTest.shouldOnlyRunTestCasesWhenURLIsReachleable" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+  <component name="RunManager" selected="JUnit.ShouldWorkWithSpringTest">
+    <tempConfiguration default="false" name="ShouldWorkWithSpringTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <pattern>
-        <option name="PATTERN" value="com.googlecode.junit.ext.*" />
+        <option name="PATTERN" value="com.googlecode.junit.ext.helpers.*" />
         <option name="ENABLED" value="true" />
       </pattern>
       <module name="junit-ext" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.googlecode.junit.ext" />
-      <option name="MAIN_CLASS_NAME" value="com.googlecode.junit.ext.RunIfTest" />
-      <option name="METHOD_NAME" value="shouldOnlyRunTestCasesWhenURLIsReachleable" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.googlecode.junit.ext.helpers" />
+      <option name="MAIN_CLASS_NAME" value="com.googlecode.junit.ext.helpers.ShouldWorkWithSpringTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -522,9 +483,10 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TestCasesOnDifferentOS" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.PrerequisiteTest.shouldOnlyRunTestCasesWhenURLIsReachleable" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ShouldWorkWithSpringTest" />
     </list>
     <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false" runner="emma">
       <module name="" />
@@ -651,8 +613,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.259553" sideWeight="0.55496687" order="0" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57880795" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36553714" sideWeight="0.55496687" order="0" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39072847" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258278" sideWeight="0.5" order="11" side_tool="false" />
@@ -660,7 +622,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5536424" sideWeight="0.5" order="13" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4357616" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4357616" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41456953" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" />
@@ -759,58 +721,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/Preconditions.java">
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PreconditionsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldWorkWithSpringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="38" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1425" selection-end="1425" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnTargetAppExist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnDifferentOS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="67" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/HTTPChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="76" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnHttpServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/RunIfTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+        <state line="19" column="13" selection-start="747" selection-end="747" vertical-scroll-proportion="0.13597734">
           <folding />
         </state>
       </provider>
@@ -822,9 +735,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/PreconditionsTest.java">
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnTargetAppExist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="747" selection-end="747" vertical-scroll-proportion="0.13597734">
+        <state line="14" column="16" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/RunIfTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnHttpServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="25" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/HTTPChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="76" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/TestCasesOnDifferentOS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="67" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/SampleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="15" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="20" selection-start="3996" selection-end="3996" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/SuccessfullyCloneMercurialRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/Preconditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="255" selection-end="267" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToSetUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/FailedToTearDown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="34" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/helpers/ShouldWorkWithSpringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="30" selection-start="655" selection-end="655" vertical-scroll-proportion="0.48387095">
           <folding />
         </state>
       </provider>
