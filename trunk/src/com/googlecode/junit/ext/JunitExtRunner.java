@@ -120,7 +120,7 @@ public class JunitExtRunner extends JUnit4ClassRunner {
     }
 
     public boolean isPrereuisitSatisfied(Method method) {
-        Prerequisite resource = method.getAnnotation(Prerequisite.class);
+        RunIf resource = method.getAnnotation(RunIf.class);
         if (resource == null) {
             return true;
         }
