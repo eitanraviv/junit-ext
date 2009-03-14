@@ -4,10 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import com.googlecode.junit.ext.Preconditions;
-import com.googlecode.junit.ext.Context;
-import com.googlecode.junit.ext.JunitExtRunner;
-import com.googlecode.junit.ext.JunitExtSpringRunner;
+import com.googlecode.junit.ext.*;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -17,13 +14,11 @@ import java.util.HashMap;
         "classpath:**/applicationContext.xml"
 })
 public class ShouldWorkWithSpringTest {
-    @Autowired
-    private SampleService service;
     @Context
     public Map context = new HashMap();
 
-
     @Test
+    @Preconditions(value = {FailedToTearDown.class})
     public void shouldFailedTestAndContinueRanAllTeardown() {
     }
 
