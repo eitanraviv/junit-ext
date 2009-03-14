@@ -193,7 +193,7 @@
         </junit>
     </target>
 
-    <property name="version" value="0.6"/>
+    <property name="version" value="1.0-RC"/>
     <target name="jar.module.junit-ext">
         <jar destfile="${target}/junit-ext-${version}.jar">
             <fileset dir="${junit-ext.output.dir}">
