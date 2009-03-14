@@ -16,10 +16,12 @@ public class HTTPChecker implements Checker {
         try {
             HttpClient httpClient = new HttpClient();
             GetMethod get = new GetMethod(url);
-            httpClient.executeMethod(get);
+            int i = httpClient.executeMethod(get);
+            System.out.println("return true" + get.getResponseBodyAsString());
             return true;
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
+            System.out.println("return false");
             return false;
         }
     }

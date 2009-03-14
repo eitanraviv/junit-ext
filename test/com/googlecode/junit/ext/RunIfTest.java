@@ -18,7 +18,7 @@ import java.io.File;
 
 import static junit.framework.Assert.fail;
 
-public class PrerequisiteTest {
+public class RunIfTest {
     private TestCountListener countListener;
     private RunNotifier runNotifier;
     private TestResultListener testResultListener;

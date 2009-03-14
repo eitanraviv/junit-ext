@@ -20,12 +20,11 @@ public class ShouldWorkWithSpringTest {
     @Autowired
     private SampleService service;
     @Context
-    public Map context = staticContext;
-    public static Map staticContext = new HashMap();
+    public Map context = new HashMap();
+
 
     @Test
-    @Preconditions({FailedToTearDown.class, SuccessfullyRan.class})
     public void shouldFailedTestAndContinueRanAllTeardown() {
-        System.out.println(service);
     }
+
 }
