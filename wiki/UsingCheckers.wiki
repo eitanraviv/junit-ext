@@ -1,0 +1,108 @@
+=Checkers=
+
+Checker is used to decide whether the prerequisite is satisfied or not.
+
+There are 2 Checkers provided as default.
+
+* OSChecker 
+
+Check whether the OS is your target platform or not. you can provide your target through arguments
+
+@Prerequisite(checker = OSChecker.class, arguments = *OSChecker.LINUX*)
+
+
+* FileChecker 
+
+Check whether the targeting file exists or not.
+
+@Prerequisite(checker = FileChecker.class, arguments = */etc/version*)
+
+* HttpChecker 
+
+Check whether the url is reachable or not
+
+@Prerequisite(checker = HTTPChecker.class, arguments = http://www.google.com*)
+
+
+* AppsInstalledChecker
+
+Check whether the target application is installed on your os or not, you can provide command to detect it, for example, you can detect whether ant is installed by providing "ant help" as the command.
+
+@Prerequisite(checker = AppsInstalledChecker.class, arguments = "ant help"*)
+
+it the process running "ant help" throws exception, that means ant is not installed.
+
+
+Ch
+
+
+=Write your own Checker=
+It is very easy to develop your own Checker, you can develop your own checker by implementing the Checker interface.
+
+{{{
+package com.googlecode.junit.ext;
+
+public interface Checker {
+    boolean satisfy();
+}
+}}}
+
+
+{{{
+package com.googlecode.junit.ext;
+
+public class MyChecker implements Checker {
+    public boolean satisfy() {
+        //to somethin and return boolean.
+    }
+}}}
+
+and use it in your test case like :
+
+{{{
+@Prerequisite(checker = MyChecker.class)
+public void runTestWhenMyCheckerIsSatisfied() {
+
+}
+}}}
+
+
+your checker can take String or String[] argument as contructor parameter like,
+
+{{{
+package com.googlecode.junit.ext;
+
+public class MyChecker implements Checker {
+    public MyChecker(String str) {
+
+    }
+ 
+    public boolean satisfy() {
+        //to somethin and return boolean.
+    }
+}}}
+
+
+and provide arguments throught argument :
+
+{{{
+@Prerequisite(checker = MyChecker.class, arguments="")
+public void runTestWhenMyCheckerIsSatisfied() {
+
+}
+}}}
+
+or
+
+{{{
+@Prerequisite(checker = MyChecker.class, arguments={"", ""})
+public void runTestWhenMyCheckerIsSatisfied() {
+
+}
+}}}
+
+
+That is it.
+
+
+if you have any problem or question, please send email to iamkaihu@gmail.com
