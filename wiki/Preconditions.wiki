@@ -111,7 +111,7 @@ the problem of doing this is:
 
 ===What is going wrong===
 
-setup and teardown is the place to clean and setup basic environment, let's say you are doing the test with database, setup and teardown is the place to start up the database , clean all the records in the database, shutdown the database. Developer should not put the logic like "create user/delete user, create wallet/crate wallet" in the setup and teardown just for reuse. those logic belong to the test.
+setup and teardown is the place to clean and setup basic environment, let's say you are doing the test with database, setup and teardown is the place to start up the database , clean all the records in the database, shutdown the database. Developer should not put the logic like "create user/delete user, create wallet/crate wallet" in the setup and teardown just for reuse. those logic belong to the test case.
 
 however, if you do the right thing, you will find it is really hard for you to destroy resource like this:
 {{{
