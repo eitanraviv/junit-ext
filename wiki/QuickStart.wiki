@@ -1,8 +1,3 @@
-Contact me[QuickStart]
-
-
-if you have any problem or question, please send email to iamkaihu@gmail.com
-
 =The problem=
 QA reported a bug on Linux platform. you opened the IDE, quickly wrote a test to reproduce it, the test helped you to find the defect in the production code very quickly, It was easy to fix! You ran the test again, it passed in this time, which proved that you really fixed the problem.
 
