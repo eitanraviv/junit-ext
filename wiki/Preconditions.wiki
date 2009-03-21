@@ -96,8 +96,9 @@ public class TestSuite {
 
 the problem of doing this is:
 
-* It is hard to understand in order to run test1, what is the data/environment to be prepared.
-* It is impossible to add a new test case like this:
+ * It is hard to understand in order to run test1, what is the data/environment to be prepared.
+ * It is impossible to add a new test case like this:
+
 
 {{{
     @Test
