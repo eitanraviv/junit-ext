@@ -59,12 +59,12 @@ will be skipped when dbc is null and the test case will be marked as *passed*.
 using @RunIf, the test case will be implemented in this way
 {{{
     @Test
-    @RunIf(checker = DatabaseChecker.class)
+    @RunIf(DatabaseIsConnected.class)
     public void calculateTotalSalary() {
         //your code there
     }
 
-    class DatabaseChecker implements Checker {
+    class DatabaseIsConnected implements Checker {
        public boolean satisify() {
             return Database.connect() != null
        }
@@ -82,7 +82,7 @@ the reason @RunIf is better:
  * The Checker can be reused cross all the test cases, on the above case, you can easily write another test cases with same assumption in this way.
 {{{
     @Test
-    @RunIf(checker = DatabaseChecker.class)
+    @RunIf(DatabaseIsConnected.class)
     public void calculateSomeOneSalary() {
           //your code here
     }
@@ -92,7 +92,7 @@ that is why junit-ext shipped with OSChecker, FileChecker and etc, I want this e
 
  * Good support from IDE, when you type
 {{{
-    @RunIf(checker =
+    @RunIf(
 }}}
 and press ctrl + alt + space(in IntelliJ), you can get all available Checkers in your classpath.
 
