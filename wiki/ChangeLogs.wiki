@@ -1,9 +1,8 @@
-
 ===1.0===
 
  * Renamed the annotation @Prerequiste to @RunIf for better naming.
- * Added the JunitExtSpringRunner to support filtering test in Spring-Junit test
- * Supported both Junit 4.5 and Junit 4.4
+ * Added the JunitExtSpringRunner to support filtering test in the Spring-Junit test
+ * Supported both Junit 4.5 and Junit 4.4 framework
 
 ===0.7===
 
@@ -12,4 +11,4 @@
 
 ===0.6===
 
- * Supported the string array as the argument for the Checker
+ * Supported the string array as argument for the Checker
