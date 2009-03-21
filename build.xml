@@ -69,8 +69,7 @@
     </path>
 
     <path id="junit-ext.module.classpath">
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5-src.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.4.jar"/>
         <pathelement location="${module.junit-ext.basedir}/lib/spring.jar"/>
         <pathelement location="${module.junit-ext.basedir}/lib/spring-test.jar"/>
         <pathelement location="${module.junit-ext.basedir}/lib/commons-logging-1.1.1.jar"/>
@@ -80,8 +79,7 @@
     <path id="junit-ext.runtime.module.classpath">
         <pathelement location="${junit-ext.output.dir}"/>
         <pathelement location="${junit-ext.testoutput.dir}"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5-src.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.4.jar"/>
         <pathelement location="${module.junit-ext.basedir}/lib/spring.jar"/>
         <pathelement location="${module.junit-ext.basedir}/lib/spring-test.jar"/>
         <pathelement location="${module.junit-ext.basedir}/lib/commons-logging-1.1.1.jar"/>
@@ -169,7 +167,7 @@
         </junit>
     </target>
 
-    <property name="version" value="1.0-RC"/>
+    <property name="version" value="1.0-junit4.4-RC"/>
     <target name="jar.module.junit-ext">
         <mkdir dir="target"/>
         <jar destfile="${target}/junit-ext-${version}.jar">
