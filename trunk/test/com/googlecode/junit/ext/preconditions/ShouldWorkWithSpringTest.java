@@ -1,8 +1,7 @@
-package com.googlecode.junit.ext.helpers;
+package com.googlecode.junit.ext.preconditions;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import com.googlecode.junit.ext.*;
 

@@ -1,8 +1,9 @@
-package com.googlecode.junit.ext.helpers;
+package com.googlecode.junit.ext.checkers;
 
 import org.junit.runner.RunWith;
 import org.junit.Test;
 import com.googlecode.junit.ext.*;
+import com.googlecode.junit.ext.checkers.OSChecker;
 
 @RunWith(JunitExtRunner.class)
 public class TestCasesOnDifferentOS {

@@ -1,9 +1,9 @@
-package com.googlecode.junit.ext.helpers;
+package com.googlecode.junit.ext.checkers;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import com.googlecode.junit.ext.RunIf;
-import com.googlecode.junit.ext.AppsInstalledChecker;
+import com.googlecode.junit.ext.checkers.AppsInstalledChecker;
 import com.googlecode.junit.ext.JunitExtRunner;
 
 @RunWith(JunitExtRunner.class)

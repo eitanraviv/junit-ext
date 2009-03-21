@@ -1,9 +1,9 @@
 package com.googlecode.junit.ext;
 
-import com.googlecode.junit.ext.helpers.TestCasesOnDifferentOS;
-import com.googlecode.junit.ext.helpers.TestShouldNeverRun;
-import com.googlecode.junit.ext.helpers.TestCasesOnTargetAppExist;
-import com.googlecode.junit.ext.helpers.TestCasesOnHttpServer;
+import com.googlecode.junit.ext.checkers.TestShouldNeverRun;
+import com.googlecode.junit.ext.checkers.TestCasesOnDifferentOS;
+import com.googlecode.junit.ext.checkers.TestCasesOnHttpServer;
+import com.googlecode.junit.ext.checkers.*;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import org.junit.Before;
@@ -65,7 +65,7 @@ public class RunIfTest {
                 TestCasesOnHttpServer.class);
         awareClassRunner.run(runNotifier);
 
-        assertThat(countListener.count(), is(1));
+        assertThat(countListener.count(), is(3));
         assertThat(testResultListener.isPassed(), is(true));
     }
 

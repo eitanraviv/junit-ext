@@ -13,6 +13,8 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.googlecode.junit.ext.checkers.Checker;
+
 public class JunitExtSpringRunner extends SpringJUnit4ClassRunner {
     public JunitExtSpringRunner(Class<?> aClass) throws InitializationError {
         super(aClass);
@@ -26,7 +28,7 @@ public class JunitExtSpringRunner extends SpringJUnit4ClassRunner {
             if (test == null) {
                 return;
             }
-            List<Precondition> list  = createPrecondtions(method, test);
+            List<Precondition> list = createPrecondtions(method, test);
             for (Precondition precondition : list) {
                 try {
                     this.getTestContextManager().prepareTestInstance(precondition);
@@ -161,10 +163,10 @@ public class JunitExtSpringRunner extends SpringJUnit4ClassRunner {
             try {
                 test = createTest();
             } catch (InvocationTargetException e) {
-                notifier.testAborted(description, e.getCause());
+                testAborted(notifier, description, e.getCause());
                 return null;
             } catch (Exception e) {
-                notifier.testAborted(description, e);
+                testAborted(notifier, description, e);
                 return null;
             }
 
@@ -172,6 +174,13 @@ public class JunitExtSpringRunner extends SpringJUnit4ClassRunner {
             e.printStackTrace();
         }
         return test;
+    }
+
+    private void testAborted(RunNotifier notifier, Description description,
+                             Throwable e) {
+        notifier.fireTestStarted(description);
+        notifier.fireTestFailure(new Failure(description, e));
+        notifier.fireTestFinished(description);
     }
 
 

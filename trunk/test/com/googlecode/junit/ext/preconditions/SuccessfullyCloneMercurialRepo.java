@@ -1,4 +1,4 @@
-package com.googlecode.junit.ext.helpers;
+package com.googlecode.junit.ext.preconditions;
 
 import com.googlecode.junit.ext.Precondition;
 

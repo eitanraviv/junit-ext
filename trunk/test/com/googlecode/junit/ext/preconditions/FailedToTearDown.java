@@ -1,10 +1,9 @@
-package com.googlecode.junit.ext.helpers;
+package com.googlecode.junit.ext.preconditions;
 
 import com.googlecode.junit.ext.Precondition;
 
 import java.util.Map;
 
-import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class FailedToTearDown implements Precondition {
