@@ -41,35 +41,8 @@
 
     <!-- JDK definitions -->
 
-    <property name="jdk.bin.1.6" value="${jdk.home.1.6}/bin"/>
-    <path id="jdk.classpath.1.6">
-        <fileset dir="${jdk.home.1.6}">
-            <include name="lib/deploy.jar"/>
-            <include name="lib/dt.jar"/>
-            <include name="lib/javaws.jar"/>
-            <include name="lib/jce.jar"/>
-            <include name="lib/management-agent.jar"/>
-            <include name="lib/plugin.jar"/>
-            <include name="lib/sa-jdi.jar"/>
-            <include name="../Classes/charsets.jar"/>
-            <include name="../Classes/classes.jar"/>
-            <include name="../Classes/dt.jar"/>
-            <include name="../Classes/jce.jar"/>
-            <include name="../Classes/jconsole.jar"/>
-            <include name="../Classes/jsse.jar"/>
-            <include name="../Classes/laf.jar"/>
-            <include name="../Classes/management-agent.jar"/>
-            <include name="../Classes/ui.jar"/>
-            <include name="lib/ext/apple_provider.jar"/>
-            <include name="lib/ext/dnsns.jar"/>
-            <include name="lib/ext/localedata.jar"/>
-            <include name="lib/ext/sunjce_provider.jar"/>
-            <include name="lib/ext/sunpkcs11.jar"/>
-        </fileset>
-    </path>
 
-    <property name="project.jdk.home" value="${jdk.home.1.6}"/>
-    <property name="project.jdk.bin" value="${jdk.bin.1.6}"/>
+
     <property name="project.jdk.classpath" value="jdk.classpath.1.6"/>
 
 
@@ -83,8 +56,7 @@
     <dirname property="module.junit-ext.basedir" file="${ant.file}"/>
 
 
-    <property name="module.jdk.home.junit-ext" value="${project.jdk.home}"/>
-    <property name="module.jdk.bin.junit-ext" value="${project.jdk.bin}"/>
+
     <property name="module.jdk.classpath.junit-ext" value="${project.jdk.classpath}"/>
 
     <property name="compiler.args.junit-ext" value="${compiler.args}"/>
@@ -97,19 +69,23 @@
     </path>
 
     <path id="junit-ext.module.classpath">
-        <path refid="${module.jdk.classpath.junit-ext}"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.4.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.4-src.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5-src.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/spring.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/spring-test.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/commons-logging-1.1.1.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/log4j-1.2.12.jar"/>
     </path>
 
     <path id="junit-ext.runtime.module.classpath">
-        <path refid="${module.jdk.classpath.junit-ext}"/>
         <pathelement location="${junit-ext.output.dir}"/>
         <pathelement location="${junit-ext.testoutput.dir}"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.4.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.4-src.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5-src.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/spring.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/spring-test.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/commons-logging-1.1.1.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/log4j-1.2.12.jar"/>
     </path>
 
 
@@ -140,7 +116,7 @@
     <target name="compile.module.junit-ext.production" description="Compile module junit-ext; production classes">
         <mkdir dir="${junit-ext.output.dir}"/>
         <javac destdir="${junit-ext.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
-               memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.junit-ext}/javac">
+               memorymaximumsize="${compiler.max.memory}" fork="true">
             <compilerarg line="${compiler.args.junit-ext}"/>
             <bootclasspath refid="junit-ext.module.bootclasspath"/>
             <classpath refid="junit-ext.module.classpath"/>
@@ -160,7 +136,7 @@
             description="compile module junit-ext; test classes" unless="skip.tests">
         <mkdir dir="${junit-ext.testoutput.dir}"/>
         <javac destdir="${junit-ext.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
-               memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.junit-ext}/javac">
+               memorymaximumsize="${compiler.max.memory}" fork="true">
             <compilerarg line="${compiler.args.junit-ext}"/>
             <classpath refid="junit-ext.module.classpath"/>
             <classpath location="${junit-ext.output.dir}"/>
@@ -195,6 +171,7 @@
 
     <property name="version" value="1.0-RC"/>
     <target name="jar.module.junit-ext">
+        <mkdir dir="target"/>
         <jar destfile="${target}/junit-ext-${version}.jar">
             <fileset dir="${junit-ext.output.dir}">
                 <include name="**/*.class"/>
@@ -202,12 +179,13 @@
         </jar>
     </target>
 
-    <target name="jar" depends="jar.module.junit-ext">
+    <target name="jar" depends="init, clean, compile.module.junit-ext, jar.module.junit-ext">
     </target>
 
     <target name="clean.module.junit-ext" description="cleanup module">
         <delete dir="${junit-ext.output.dir}"/>
         <delete dir="${junit-ext.testoutput.dir}"/>
+        <delete dir="target"/>
     </target>
 
     <target name="init" description="Build initialization">
