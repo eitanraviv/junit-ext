@@ -15,12 +15,12 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/lib/junit-4.4-src.jar!/" />
-          <root url="file://$MODULE_DIR$/../../Desktop/spring-framework-2.5.5 2/tiger/mock" />
+          <root url="jar://$MODULE_DIR$/lib/junit-4.5-src.jar!/" />
         </SOURCES>
         <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntryProperties />
   </component>
   <component name="RSpecModuleSettingsStorage">
     <RSPEC_MODULE_SETTINGS_STORAGE_ID NAME="RSPEC_SUPPORT_TYPE" VALUE="NONE" />

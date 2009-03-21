@@ -15,6 +15,8 @@ import java.lang.reflect.Field;
 import java.util.List;
 import java.util.ArrayList;
 
+import com.googlecode.junit.ext.checkers.Checker;
+
 public class JunitExtRunner extends JUnit4ClassRunner {
     public JunitExtRunner(Class<?> klass) throws InitializationError {
         super(klass);
@@ -156,10 +158,10 @@ public class JunitExtRunner extends JUnit4ClassRunner {
             try {
                 test = createTest();
             } catch (InvocationTargetException e) {
-                notifier.testAborted(description, e.getCause());
+                testAborted(notifier, description, e.getCause());
                 return null;
             } catch (Exception e) {
-                notifier.testAborted(description, e);
+                testAborted(notifier, description, e);
                 return null;
             }
 
@@ -167,6 +169,13 @@ public class JunitExtRunner extends JUnit4ClassRunner {
             e.printStackTrace();
         }
         return test;
+    }
+
+    private void testAborted(RunNotifier notifier, Description description,
+                             Throwable e) {
+        notifier.fireTestStarted(description);
+        notifier.fireTestFailure(new Failure(description, e));
+        notifier.fireTestFinished(description);
     }
 
 }

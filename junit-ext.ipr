@@ -229,7 +229,10 @@
   <component name="ProjectDetails">
     <option name="projectName" value="junit-ext" />
   </component>
-  <component name="ProjectFileVersion" converted="true" />
+  <component name="ProjectFileVersion" converted="true">
+    <converter id="javaee-modules" />
+    <converter id="ror-modules" />
+  </component>
   <component name="ProjectKey">
     <option name="state" value="https://junit-ext.googlecode.com/svn/trunk/junit-ext.ipr" />
   </component>
@@ -238,7 +241,7 @@
       <module fileurl="file://$PROJECT_DIR$/junit-ext.iml" filepath="$PROJECT_DIR$/junit-ext.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ResourceManagerContainer">
@@ -265,8 +268,7 @@
         </entry>
       </map>
     </option>
-    <option name="myVersion" value="124" />
-    <option name="mySupportsUserInfoFilter" value="true" />
+    <option name="myVersion" value="123" />
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="svn" />
