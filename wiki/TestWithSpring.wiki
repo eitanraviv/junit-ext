@@ -11,13 +11,13 @@ public class ShouldWorkWithSpringTest {
 
     @Test
     @RunIf(NeverSatisfiedChecker.class)
-    public void shouldFailedTestAndContinueRanAllTeardown() {
+    public void shouldBeIgnored() {
         throw new RuntimeException();
     }
 
     @Test
     @RunIf(AlwaysSatisfiedChecker.class)
-    public void should() throws Exception {
+    public void shouldRunWithInstantiatedRepository() throws Exception {
         assertThat(repository, is(not(nullValue())));
     }
 
