@@ -2,20 +2,17 @@ package com.googlecode.junit.suite;
 
 import com.googlecode.junit.ext.checkers.TestShouldNeverRun;
 import com.googlecode.junit.ext.checkers.TestCasesOnDifferentOS;
-import com.googlecode.junit.ext.checkers.TestCasesOnHttpServer;
+import com.googlecode.junit.ext.checkers.TestCasesOnSocketChecker;
 import com.googlecode.junit.ext.checkers.*;
 import com.googlecode.junit.ext.JunitExtRunner;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assume.assumeThat;
 import org.junit.runner.Description;
 import org.junit.runner.notification.RunListener;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runner.notification.Failure;
-
-import java.io.File;
 
 import static junit.framework.Assert.fail;
 
@@ -63,7 +60,7 @@ public class RunIfTest {
     @Test
     public void shouldOnlyRunTestCasesWhenURLIsReachleable() throws Exception {
         JunitExtRunner awareClassRunner = new JunitExtRunner(
-                TestCasesOnHttpServer.class);
+                TestCasesOnSocketChecker.class);
         awareClassRunner.run(runNotifier);
 
         assertThat(countListener.count(), is(3));
