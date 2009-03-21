@@ -10,7 +10,7 @@ import java.util.HashMap;
 
 @RunWith(JunitExtSpringRunner.class)
 @ContextConfiguration(locations = {
-        "classpath:**/applicationContext.xml"
+        "classpath:**/applicationContext-repository.xml"
 })
 public class ShouldWorkWithSpringTest {
     @Context

@@ -9,12 +9,12 @@ import com.googlecode.junit.ext.JunitExtRunner;
 @RunWith(JunitExtRunner.class)
 public class TestCasesOnTargetAppExist {
     @Test
-    @RunIf(checker = AppsInstalledChecker.class, arguments = "ant -version")
+    @RunIf(value = AppsInstalledChecker.class, arguments = "ant -version")
     public void shouldRunIfAntInstalled() throws Exception {
     }
 
     @Test
-    @RunIf(checker = AppsInstalledChecker.class, arguments = "svn help")
+    @RunIf(value = AppsInstalledChecker.class, arguments = "svn help")
     public void shouldRunIfSvnInstalled() throws Exception {
         throw new RuntimeException();
 

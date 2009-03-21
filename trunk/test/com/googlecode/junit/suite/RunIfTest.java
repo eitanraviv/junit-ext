@@ -1,9 +1,10 @@
-package com.googlecode.junit.ext;
+package com.googlecode.junit.suite;
 
 import com.googlecode.junit.ext.checkers.TestShouldNeverRun;
 import com.googlecode.junit.ext.checkers.TestCasesOnDifferentOS;
 import com.googlecode.junit.ext.checkers.TestCasesOnHttpServer;
 import com.googlecode.junit.ext.checkers.*;
+import com.googlecode.junit.ext.JunitExtRunner;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import org.junit.Before;
@@ -103,13 +104,6 @@ public class RunIfTest {
         public void testFinished(Description description) throws Exception {
             count++;
         }
-    }
-
-    @Test
-    public void should() {
-        assumeThat(File.separatorChar, is('\\'));
-        System.out.println("1111");
-        fail();
     }
 
     private class TestResultListener extends RunListener {
