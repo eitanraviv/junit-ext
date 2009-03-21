@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="junit-ext" default="all">
+
+
+    <property file="junit-ext.properties"/>
+    <!-- Uncomment the following property if no tests compilation is needed -->
+    <!--
+   <property name="skip.tests" value="true"/>
+    -->
+
+    <!-- Compiler options -->
+
+    <property name="compiler.debug" value="on"/>
+    <property name="compiler.generate.no.warnings" value="off"/>
+    <property name="compiler.args" value=""/>
+    <property name="compiler.max.memory" value="128m"/>
+
+    <patternset id="ignored.files">
+        <exclude name="**/CVS/**"/>
+        <exclude name="**/SCCS/**"/>
+        <exclude name="**/RCS/**"/>
+        <exclude name="**/rcs/**"/>
+        <exclude name="**/.DS_Store/**"/>
+        <exclude name="**/.svn/**"/>
+        <exclude name="**/.sbas/**"/>
+        <exclude name="**/.IJI.*/**"/>
+        <exclude name="**/vssver.scc/**"/>
+        <exclude name="**/vssver2.scc/**"/>
+    </patternset>
+    <patternset id="compiler.resources">
+        <include name="**/?*.properties"/>
+        <include name="**/?*.xml"/>
+        <include name="**/?*.gif"/>
+        <include name="**/?*.png"/>
+        <include name="**/?*.jpeg"/>
+        <include name="**/?*.jpg"/>
+        <include name="**/?*.html"/>
+        <include name="**/?*.dtd"/>
+        <include name="**/?*.tld"/>
+    </patternset>
+
+    <!-- JDK definitions -->
+
+
+
+    <property name="project.jdk.classpath" value="jdk.classpath.1.6"/>
+
+
+    <!-- Global Libraries -->
+
+    <!-- Modules -->
+
+
+    <!-- Module junit-ext -->
+
+    <dirname property="module.junit-ext.basedir" file="${ant.file}"/>
+
+
+
+    <property name="module.jdk.classpath.junit-ext" value="${project.jdk.classpath}"/>
+
+    <property name="compiler.args.junit-ext" value="${compiler.args}"/>
+
+    <property name="junit-ext.output.dir" value="${module.junit-ext.basedir}/out/production/junit-ext"/>
+    <property name="junit-ext.testoutput.dir" value="${module.junit-ext.basedir}/out/test/junit-ext"/>
+    <property name="target" value="${module.junit-ext.basedir}/target"/>
+    <path id="junit-ext.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="junit-ext.module.classpath">
+        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5-src.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/spring.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/spring-test.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/commons-logging-1.1.1.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/log4j-1.2.12.jar"/>
+    </path>
+
+    <path id="junit-ext.runtime.module.classpath">
+        <pathelement location="${junit-ext.output.dir}"/>
+        <pathelement location="${junit-ext.testoutput.dir}"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5-src.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/spring.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/spring-test.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/commons-logging-1.1.1.jar"/>
+        <pathelement location="${module.junit-ext.basedir}/lib/log4j-1.2.12.jar"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.junit-ext">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.junit-ext">
+        <patternset refid="excluded.from.module.junit-ext"/>
+    </patternset>
+
+    <path id="junit-ext.module.sourcepath">
+        <dirset dir="${module.junit-ext.basedir}">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+    <path id="junit-ext.module.test.sourcepath">
+        <dirset dir="${module.junit-ext.basedir}">
+            <include name="test"/>
+        </dirset>
+    </path>
+
+
+    <target name="compile.module.junit-ext" depends="compile.module.junit-ext.production,compile.module.junit-ext.tests"
+            description="Compile module junit-ext"/>
+
+    <target name="compile.module.junit-ext.production" description="Compile module junit-ext; production classes">
+        <mkdir dir="${junit-ext.output.dir}"/>
+        <javac destdir="${junit-ext.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true">
+            <compilerarg line="${compiler.args.junit-ext}"/>
+            <bootclasspath refid="junit-ext.module.bootclasspath"/>
+            <classpath refid="junit-ext.module.classpath"/>
+            <src refid="junit-ext.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.junit-ext"/>
+        </javac>
+
+        <copy todir="${junit-ext.output.dir}">
+            <fileset dir="${module.junit-ext.basedir}/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="compile.module.junit-ext.tests" depends="compile.module.junit-ext.production"
+            description="compile module junit-ext; test classes" unless="skip.tests">
+        <mkdir dir="${junit-ext.testoutput.dir}"/>
+        <javac destdir="${junit-ext.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true">
+            <compilerarg line="${compiler.args.junit-ext}"/>
+            <classpath refid="junit-ext.module.classpath"/>
+            <classpath location="${junit-ext.output.dir}"/>
+            <src refid="junit-ext.module.test.sourcepath"/>
+            <patternset refid="excluded.from.compilation.junit-ext"/>
+        </javac>
+
+
+        <copy todir="${junit-ext.testoutput.dir}">
+            <fileset dir="${module.junit-ext.basedir}/test">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="test.module.junit-ext">
+
+        <junit printsummary="yes" dir="${module.junit-ext.basedir}" haltonfailure="true" fork="true" forkMode="once">
+            <classpath refid="junit-ext.runtime.module.classpath"></classpath>
+            <formatter type="brief" usefile="false"/>
+            <formatter type="xml"/>
+
+
+            <batchtest todir="${target}/testoutput">
+                <fileset dir="${module.junit-ext.basedir}/test">
+                    <include name="**/*Test.java"></include>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+    <property name="version" value="1.0-RC"/>
+    <target name="jar.module.junit-ext">
+        <mkdir dir="target"/>
+        <jar destfile="${target}/junit-ext-${version}.jar">
+            <fileset dir="${junit-ext.output.dir}">
+                <include name="**/*.class"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="jar" depends="init, clean, compile.module.junit-ext, jar.module.junit-ext">
+    </target>
+
+    <target name="clean.module.junit-ext" description="cleanup module">
+        <delete dir="${junit-ext.output.dir}"/>
+        <delete dir="${junit-ext.testoutput.dir}"/>
+        <delete dir="target"/>
+    </target>
+
+    <target name="init" description="Build initialization">
+        <delete dir="${target}"/>
+        <mkdir dir="${target}"/>
+        <mkdir dir="${target}/testoutput"/>
+
+    </target>
+
+    <target name="clean" depends="clean.module.junit-ext" description="cleanup all"/>
+
+    <target name="all" depends="init, clean, compile.module.junit-ext,test.module.junit-ext,jar.module.junit-ext"
+            description="build all"/>
+</project>
