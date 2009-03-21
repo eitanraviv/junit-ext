@@ -1,4 +1,4 @@
-junit-ext also provide the JunitExtSpringRunner to let you filter the testcases when running the test with Spring. The only different is to use JunitExtSpringRunner instead of JunitExtRunner
+junit-ext also provides the JunitExtSpringRunner to let you filter the testcases when running the test with Spring. The only different is to use JunitExtSpringRunner instead of JunitExtRunner
 
 {{{
 @RunWith(JunitExtSpringRunner.class)
