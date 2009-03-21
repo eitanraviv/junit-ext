@@ -75,11 +75,11 @@ when the conn is null, the test will *not* be executed, and will be marked as *i
 
 the reason @RunIf is better:
 
-# A passed test case means the actual result is same as expected, considered the test case is actually not executed, it should be marked as ignored rather than passed. Green bar will hide the problem.
+ # A passed test case means the actual result is same as expected, considered the test case is actually not executed, it should be marked as ignored rather than passed. Green bar will hide the problem.
 
-# If the dbc is null which means the the assumption is wrong then the test framework should not waste time on calling the test case.
+ # If the dbc is null which means the the assumption is wrong then the test framework should not waste time on calling the test case.
 
-# The Checker can be reused cross all the test cases, on the above case, you can easily write another test cases with same assumption in this way.
+ # The Checker can be reused cross all the test cases, on the above case, you can easily write another test cases with same assumption in this way.
 {{{
     @Test
     @RunIf(checker = DatabaseChecker.class)
@@ -90,13 +90,13 @@ the reason @RunIf is better:
 
 that is why junit-ext shipped with OSChecker, FileChecker and etc, I want this extension can help developers not to be bothered with some common cases and focus on the testing.
 
-# Good support from IDE, when you type
+ # Good support from IDE, when you type
 {{{
     @RunIf(checker =
 }}}
 and press ctrl + alt + space(in IntelliJ), you can get all available Checkers in your classpath.
 
-# More readable
+ # More readable
 
 
 -----
