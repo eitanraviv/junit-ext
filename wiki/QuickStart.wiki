@@ -1,4 +1,3 @@
-
 Contact me[QuickStart]
 
 
@@ -105,9 +104,10 @@ and press ctrl + alt + space(in IntelliJ), you can get all available Checkers in
 # More readable
 
 
----
+-----
+
 Related content:
 
- * [UsingCheckers Using Checkers]
+ * [UsingCheckers Using Checkers in the test]
  * [WriteYourOwnChecker Write your own checker]
  * [Preconditions Using Preconditions]
