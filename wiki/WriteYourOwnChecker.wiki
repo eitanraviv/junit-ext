@@ -1,13 +1,67 @@
-#summary One-sentence summary of this page.
-
-= Introduction =
-
-Add your content here.
+Ch
 
 
-= Details =
+=Write your own Checker=
+It is very easy to develop your own Checker, you can develop your own checker by implementing the Checker interface.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+{{{
+package com.googlecode.junit.ext;
+
+public interface Checker {
+    boolean satisfy();
+}
+}}}
+
+
+{{{
+package com.googlecode.junit.ext;
+
+public class MyChecker implements Checker {
+    public boolean satisfy() {
+        //to somethin and return boolean.
+    }
+}}}
+
+and use it in your test case like :
+
+{{{
+@Prerequisite(checker = MyChecker.class)
+public void runTestWhenMyCheckerIsSatisfied() {
+
+}
+}}}
+
+
+your checker can take String or String[] argument as contructor parameter like,
+
+{{{
+package com.googlecode.junit.ext;
+
+public class MyChecker implements Checker {
+    public MyChecker(String str) {
+
+    }
+ 
+    public boolean satisfy() {
+        //to somethin and return boolean.
+    }
+}}}
+
+
+and provide arguments throught argument :
+
+{{{
+@Prerequisite(checker = MyChecker.class, arguments="")
+public void runTestWhenMyCheckerIsSatisfied() {
+
+}
+}}}
+
+or
+
+{{{
+@Prerequisite(checker = MyChecker.class, arguments={"", ""})
+public void runTestWhenMyCheckerIsSatisfied() {
+
+}
+}}}
