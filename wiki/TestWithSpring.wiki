@@ -1,1 +1,25 @@
-xxxx
+junit-ext also provide the JunitExtSpringRunner to let you filter the testcases when running the test with Spring. The only different is to use JunitExtSpringRunner instead of JunitExtRunner
+
+{{{
+@RunWith(JunitExtSpringRunner.class)
+@ContextConfiguration(locations = {
+        "classpath:**/applicationContext-repository.xml"
+        })
+public class ShouldWorkWithSpringTest {
+    @Autowired
+    private SampleRepository repository;
+
+    @Test
+    @RunIf(NeverSatisfiedChecker.class)
+    public void shouldFailedTestAndContinueRanAllTeardown() {
+        throw new RuntimeException();
+    }
+
+    @Test
+    @RunIf(AlwaysSatisfiedChecker.class)
+    public void should() throws Exception {
+        assertThat(repository, is(not(nullValue())));
+    }
+
+}
+}}}
