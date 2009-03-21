@@ -7,7 +7,9 @@ import java.util.Map;
 public class SuccessfullyRan implements Precondition {
     private Map obj;
 
-
+    public SuccessfullyRan() {
+        
+    }
     public SuccessfullyRan(Object obj) {
         this.obj = (Map) obj;
     }

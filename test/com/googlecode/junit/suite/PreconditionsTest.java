@@ -1,8 +1,9 @@
-package com.googlecode.junit.ext;
+package com.googlecode.junit.suite;
 
 import com.googlecode.junit.ext.preconditions.ShouldFailedTestAndContinueRanAllTeardownTest;
 import com.googlecode.junit.ext.preconditions.ShouldFailedTestAndStopRunningAtFailedPreconditionsTest;
 import com.googlecode.junit.ext.preconditions.ShouldInvokeAllSetupsAndTeardownsTest;
+import com.googlecode.junit.ext.JunitExtRunner;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import org.junit.Before;

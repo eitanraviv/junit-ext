@@ -9,32 +9,32 @@ import com.googlecode.junit.ext.checkers.HTTPChecker;
 @RunWith(JunitExtRunner.class)
 public class TestCasesOnHttpServer {
     @Test
-    @RunIf(checker = HTTPChecker.class, arguments = {"http://www.google.com", "80"})
+    @RunIf(value = HTTPChecker.class, arguments = {"http://www.google.com", "80"})
     public void shouldRun() throws Exception {
     }
 
     @Test
-    @RunIf(checker = HTTPChecker.class, arguments = {"http://www.google.com"})
+    @RunIf(value = HTTPChecker.class, arguments = {"http://www.google.com"})
     public void shouldRun2() throws Exception {
     }
 
     @Test
-    @RunIf(checker = HTTPChecker.class, arguments = "http://www.google.com")
+    @RunIf(value = HTTPChecker.class, arguments = "http://www.google.com")
     public void shouldRun3() throws Exception {
     }
 
     @Test
-    @RunIf(checker = HTTPChecker.class, arguments = {"http://www.somewhereinthere.bj", "80"})
+    @RunIf(value = HTTPChecker.class, arguments = {"http://www.somewhereinthere.bj", "80"})
     public void shouldNotRun() throws Exception {
     }
 
     @Test
-    @RunIf(checker = HTTPChecker.class, arguments = {"http://www.somewhereinthere.bj"})
+    @RunIf(value = HTTPChecker.class, arguments = {"http://www.somewhereinthere.bj"})
     public void shouldNotRun2() throws Exception {
     }
 
     @Test
-    @RunIf(checker = HTTPChecker.class, arguments = "http://www.somewhereinthere.bj")
+    @RunIf(value = HTTPChecker.class, arguments = "http://www.somewhereinthere.bj")
     public void shouldNotRun3() throws Exception {
     }
 }

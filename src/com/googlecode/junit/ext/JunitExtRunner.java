@@ -126,7 +126,7 @@ public class JunitExtRunner extends JUnit4ClassRunner {
         if (resource == null) {
             return true;
         }
-        Class<? extends Checker> prerequisiteChecker = resource.checker();
+        Class<? extends Checker> prerequisiteChecker = resource.value();
         try {
             String[] arguments = resource.arguments();
             Checker checker;
