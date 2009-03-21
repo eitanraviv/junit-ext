@@ -1,1 +1,1 @@
-I am a consultant work for ThoughtWorks[http://www.thoughtworks.com/] 
+I am a consultant work for [http://www.thoughtworks.com/ ThoughtWorks], big fan of Agile methodology, I focus on the continuous integration, [http://cruisecontrol.sourceforge.net/ CruiseControl] and [http://studios.thoughtworks.com/cruise-continuous-integration Cruise] are the two projects on, My email is iamkaihu@gmail.com, my twitter is: iamhukai
