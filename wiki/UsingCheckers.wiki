@@ -43,7 +43,7 @@ There are 5 Checkers provided as default
 
 it is used to check whether the OS is the targeting platform or not. The targeting platform should be provided as arguments. Given the following test case:
 {{{
-@RunIf(checker = OSChecker.class, arguments = OSChecker.LINUX)
+@RunIf(value = OSChecker.class, arguments = OSChecker.LINUX)
 @Test
 public void test1() {
 
@@ -57,7 +57,7 @@ it will only be ran on the Linux and be ignored on any other platform.
 It is used to check whether the targeting file exists or not. the targeting file should be provided as arguments, Given the following test case:
 {{{
 
-@RunIf(checker = FileChecker.class, arguments = "/etc/version")
+@RunIf(value = FileChecker.class, arguments = "/etc/version")
 @Test
 public void test1() {
 
@@ -72,7 +72,7 @@ It is used to check whether the targeting URL is reachable or not. the targeting
 
 {{{
 
-@RunIf(checker = HTTPChecker.class, arguments = "http://www.google.com")
+@RunIf(value = HTTPChecker.class, arguments = "http://www.google.com")
 @Test
 public void test1() {
 
@@ -80,7 +80,7 @@ public void test1() {
 
 or
 
-@RunIf(checker = HTTPChecker.class, arguments = {"http://localhost", "8080"})
+@RunIf(value = HTTPChecker.class, arguments = {"http://localhost", "8080"})
 @Test
 public void test2() {
 
@@ -97,7 +97,7 @@ It is used to check whether the targeting Socket server is reachable. the target
 
 {{{
 
-@RunIf(checker = SocketChecker.class, arguments = {"10.18.3.12", "8723"})
+@RunIf(value = SocketChecker.class, arguments = {"10.18.3.12", "8723"})
 @Test
 public void test1() {
 
@@ -110,8 +110,26 @@ it will only be ran when the server at 10.18.3.12 opened the port 8723
 
 * AppsInstalledChecker
 
-Check whether the targeting application is installed or not, you can provide command to detect it, for example, you can detect whether ant is installed by providing "ant help" as the command.
+Check whether the targeting application is installed or not, you can provide a command to detect it, for example, you can detect whether ant is installed by providing "ant help" as the command.
 
-@Prerequisite(checker = AppsInstalledChecker.class, arguments = "ant help")
+{{{
 
-it the process running "ant help" throws exception, that means ant is not installed.
+@RunIf(value = AppsInstalledChecker.class, arguments = "ant help")
+@Test
+public void test1() {
+
+}
+
+
+}}}
+
+it will only be ran when ant is installed(in your PATH)
+
+
+-----
+
+All contents:
+ * [QuickStart Quick start]
+ * [UsingCheckers Using Checkers in the test]
+ * [WriteYourOwnChecker Write your own checker]
+ * [Preconditions Using Preconditions]
