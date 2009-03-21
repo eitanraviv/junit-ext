@@ -16,37 +16,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/AlwaysSatisfiedChecker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestShouldNeverRun.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestShouldNeverRun.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.iws" afterPath="$PROJECT_DIR$/junit-ext.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/spring" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.iml" afterPath="$PROJECT_DIR$/junit-ext.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnHttpServer.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnHttpServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditionspring/SampleComponent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/suite" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/applicationContext.xml" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/applicationContext-repository.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/NeverSatisfiedPrerequisite.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/NeverSatisfiedChecker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnDifferentOS.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnDifferentOS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtSpringRunner.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtSpringRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/ShouldWorkWithSpringTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/ShouldWorkWithSpringTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCaseTwoArguments.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCaseTwoArguments.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/applicationContext.xml" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/applicationContext-preconditions.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/HTTPChecker.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/HTTPChecker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/RunIfTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/suite/RunIfTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/RunIf.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/RunIf.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/JunitExtSpringRunnerTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/suite/JunitExtSpringRunnerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/ShouldWorkWithSpringTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/SampleRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnTargetAppExist.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnTargetAppExist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/SuccessfullyRan.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/SuccessfullyRan.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditionspring" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditionspring/applicationContext-preconditionspring.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/suite/PreconditionsWithSpringSupportTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.ipr" afterPath="$PROJECT_DIR$/junit-ext.ipr" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/PreconditionsTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/suite/PreconditionsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditionspring/ShouldWorkWithSpringAndPreconditionsTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/FailedToTearDown.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/FailedToTearDown.java" />
     </list>
     <ignored path="junit-ext.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,7 +79,26 @@
     <favorites_list name="junit-ext" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ShouldWorkWithSpringTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/ShouldWorkWithSpringTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="173" column="29" selection-start="6844" selection-end="6844" vertical-scroll-proportion="0.3601896">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -159,54 +149,6 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="junit-ext" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit-ext" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit-ext" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit-ext" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="suite" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit-ext" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit-ext" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit-ext" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -566,13 +508,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtSpringRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="0" selection-start="4844" selection-end="4844" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditionspring/SampleComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="128" selection-end="143" vertical-scroll-proportion="0.0">
@@ -611,13 +546,6 @@
     <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/SuccessfullyRan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="30" selection-start="363" selection-end="384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/ShouldWorkWithSpringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="15" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -674,6 +602,20 @@
     <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/SocketChecker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/ShouldWorkWithSpringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="29" selection-start="6844" selection-end="6844" vertical-scroll-proportion="0.3601896">
           <folding />
         </state>
       </provider>
