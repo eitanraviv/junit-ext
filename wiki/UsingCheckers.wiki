@@ -93,7 +93,7 @@ it will only be ran when the http://www.google.com or http://localhost:8080 is r
 
 * SocketChecker
 
-It is used to check whether the targeting Socket server is reachable or not. the targeting socket server should be provided as arguments, Given the following test case:
+It is used to check whether the targeting Socket server is reachable. the targeting socket server should be provided as arguments, Given the following test case:
 
 {{{
 
@@ -115,5 +115,3 @@ Check whether the targeting application is installed or not, you can provide com
 @Prerequisite(checker = AppsInstalledChecker.class, arguments = "ant help")
 
 it the process running "ant help" throws exception, that means ant is not installed.
-
-
