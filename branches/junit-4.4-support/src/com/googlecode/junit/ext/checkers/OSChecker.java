@@ -1,7 +1,5 @@
 package com.googlecode.junit.ext.checkers;
 
-import com.googlecode.junit.ext.checkers.Checker;
-
 public class OSChecker implements Checker {
     public static final String MAC = "mac";
     public static final String LINUX = "linux";

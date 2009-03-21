@@ -1,7 +1,5 @@
 package com.googlecode.junit.ext.checkers;
 
-import com.googlecode.junit.ext.checkers.Checker;
-
 import java.io.File;
 
 public class FileChecker implements Checker {

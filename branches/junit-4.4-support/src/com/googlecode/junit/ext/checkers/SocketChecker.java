@@ -1,7 +1,5 @@
 package com.googlecode.junit.ext.checkers;
 
-import com.googlecode.junit.ext.checkers.Checker;
-
 import java.net.Socket;
 
 public class SocketChecker implements Checker {
@@ -11,6 +9,10 @@ public class SocketChecker implements Checker {
     public SocketChecker(String[] args) {
         this.host = args[0];
         this.port = Integer.valueOf(args[1]);
+    }
+
+    public SocketChecker() {
+        super();
     }
 
     public boolean satisfy() {
