@@ -1,8 +1,5 @@
-Ch
-
-
 =Write your own Checker=
-It is very easy to develop your own Checker, you can develop your own checker by implementing the Checker interface.
+You can develop your own checker by implementing the Checker interface.
 
 {{{
 package com.googlecode.junit.ext;
@@ -18,21 +15,12 @@ package com.googlecode.junit.ext;
 
 public class MyChecker implements Checker {
     public boolean satisfy() {
-        //to somethin and return boolean.
+        //to something and return boolean.
     }
 }}}
 
-and use it in your test case like :
 
-{{{
-@Prerequisite(checker = MyChecker.class)
-public void runTestWhenMyCheckerIsSatisfied() {
-
-}
-}}}
-
-
-your checker can take String or String[] argument as contructor parameter like,
+your checker can take String or String[] as argument in the contructor,
 
 {{{
 package com.googlecode.junit.ext;
@@ -45,13 +33,30 @@ public class MyChecker implements Checker {
     public boolean satisfy() {
         //to somethin and return boolean.
     }
+}
+
+or
+
+package com.googlecode.junit.ext;
+
+public class MyChecker implements Checker {
+    public MyChecker(String[] strs) {
+
+    }
+ 
+    public boolean satisfy() {
+        //to somethin and return boolean.
+    }
+}
+
+
 }}}
 
 
-and provide arguments throught argument :
+the arguments can be provided through arguments in the annotation:
 
 {{{
-@Prerequisite(checker = MyChecker.class, arguments="")
+@Prerequisite(checker = MyChecker.class, arguments="sth")
 public void runTestWhenMyCheckerIsSatisfied() {
 
 }
@@ -60,8 +65,19 @@ public void runTestWhenMyCheckerIsSatisfied() {
 or
 
 {{{
-@Prerequisite(checker = MyChecker.class, arguments={"", ""})
+@Prerequisite(checker = MyChecker.class, arguments={"sth", "sth"})
 public void runTestWhenMyCheckerIsSatisfied() {
 
 }
 }}}
+
+
+
+
+-----
+
+All contents:
+ * [QuickStart Quick start]
+ * [UsingCheckers Using Checkers in the test]
+ * [WriteYourOwnChecker Write your own checker]
+ * [Preconditions Using Preconditions]
