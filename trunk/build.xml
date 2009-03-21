@@ -169,7 +169,7 @@
         </junit>
     </target>
 
-    <property name="version" value="1.0-RC"/>
+    <property name="version" value="1.0-junit-4.5-RC-1"/>
     <target name="jar.module.junit-ext">
         <mkdir dir="target"/>
         <jar destfile="${target}/junit-ext-${version}.jar">
