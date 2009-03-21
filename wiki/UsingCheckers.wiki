@@ -1,108 +1,119 @@
 =Checkers=
 
-Checker is used to decide whether the prerequisite is satisfied or not.
+Checkers are used to decide whether the test case should be ran or not. Here is the example of using OSCheck in the test.
 
-There are 2 Checkers provided as default.
+{{{
+package com.googlecode.junit.ext.checkers;
 
-* OSChecker 
+import org.junit.runner.RunWith;
+import org.junit.Test;
+import com.googlecode.junit.ext.*;
+import com.googlecode.junit.ext.checkers.OSChecker;
 
-Check whether the OS is your target platform or not. you can provide your target through arguments
+@RunWith(JunitExtRunner.class)
+public class TestCasesOnDifferentOS {
+    @Test
+    @RunIf(value = OSChecker.class, arguments = OSChecker.MAC)
+    public void shouldRunOnMac() throws Exception {
+    }
 
-@Prerequisite(checker = OSChecker.class, arguments = *OSChecker.LINUX*)
+    @Test
+    @RunIf(value = OSChecker.class, arguments = OSChecker.WINDOWS)
+    public void shouldRunOnWindows() throws Exception {
+
+    }
+
+    @Test
+    @RunIf(value = OSChecker.class, arguments = OSChecker.LINUX)
+    public void shouldRunOnLinux() throws Exception {
+    }
+
+}}}
 
 
-* FileChecker 
+What you should do is
+ * Put @RunWith(JunitExtRunner.class) on top of your class to make junit run the test with JunitExtRunner.
+ * Annotate your test with @RunIf and @Test
+ * In the @RunIf, pick up a proper Checker or write your own Checker.
 
-Check whether the targeting file exists or not.
 
-@Prerequisite(checker = FileChecker.class, arguments = */etc/version*)
+There are 5 Checkers provided as default
+
+* OSChecker
+
+it is used to check whether the OS is the targeting platform or not. The targeting platform should be provided as arguments. Given the following test case:
+{{{
+@RunIf(checker = OSChecker.class, arguments = OSChecker.LINUX)
+@Test
+public void test1() {
+
+}
+}}}
+
+it will only be ran on the Linux and be ignored on any other platform.
+
+* FileChecker
+
+It is used to check whether the targeting file exists or not. the targeting file should be provided as arguments, Given the following test case:
+{{{
+
+@RunIf(checker = FileChecker.class, arguments = "/etc/version")
+@Test
+public void test1() {
+
+}
+}}}
+
+it will only be ran when /etc/version exist and be ignored on any other cases.
 
 * HttpChecker 
 
-Check whether the url is reachable or not
+It is used to check whether the targeting URL is reachable or not. the targeting URL should be provided as arguments, Given the following test case:
 
-@Prerequisite(checker = HTTPChecker.class, arguments = http://www.google.com*)
+{{{
 
+@RunIf(checker = HTTPChecker.class, arguments = "http://www.google.com")
+@Test
+public void test1() {
+
+}
+
+or
+
+@RunIf(checker = HTTPChecker.class, arguments = {"http://localhost", "8080"})
+@Test
+public void test2() {
+
+}
+
+
+}}}
+
+it will only be ran when the http://www.google.com or http://localhost:8080 is reachable or not.
+
+* SocketChecker
+
+It is used to check whether the targeting Socket server is reachable or not. the targeting socket server should be provided as arguments, Given the following test case:
+
+{{{
+
+@RunIf(checker = SocketChecker.class, arguments = {"10.18.3.12", "8723"})
+@Test
+public void test1() {
+
+}
+
+
+}}}
+
+it will only be ran when the server at 10.18.3.12 opened the port 8723 
 
 * AppsInstalledChecker
 
-Check whether the target application is installed on your os or not, you can provide command to detect it, for example, you can detect whether ant is installed by providing "ant help" as the command.
+Check whether the targeting application is installed or not, you can provide command to detect it, for example, you can detect whether ant is installed by providing "ant help" as the command.
 
-@Prerequisite(checker = AppsInstalledChecker.class, arguments = "ant help"*)
+@Prerequisite(checker = AppsInstalledChecker.class, arguments = "ant help")
 
 it the process running "ant help" throws exception, that means ant is not installed.
 
 
-Ch
-
-
-=Write your own Checker=
-It is very easy to develop your own Checker, you can develop your own checker by implementing the Checker interface.
-
-{{{
-package com.googlecode.junit.ext;
-
-public interface Checker {
-    boolean satisfy();
-}
-}}}
-
-
-{{{
-package com.googlecode.junit.ext;
-
-public class MyChecker implements Checker {
-    public boolean satisfy() {
-        //to somethin and return boolean.
-    }
-}}}
-
-and use it in your test case like :
-
-{{{
-@Prerequisite(checker = MyChecker.class)
-public void runTestWhenMyCheckerIsSatisfied() {
-
-}
-}}}
-
-
-your checker can take String or String[] argument as contructor parameter like,
-
-{{{
-package com.googlecode.junit.ext;
-
-public class MyChecker implements Checker {
-    public MyChecker(String str) {
-
-    }
- 
-    public boolean satisfy() {
-        //to somethin and return boolean.
-    }
-}}}
-
-
-and provide arguments throught argument :
-
-{{{
-@Prerequisite(checker = MyChecker.class, arguments="")
-public void runTestWhenMyCheckerIsSatisfied() {
-
-}
-}}}
-
-or
-
-{{{
-@Prerequisite(checker = MyChecker.class, arguments={"", ""})
-public void runTestWhenMyCheckerIsSatisfied() {
-
-}
-}}}
-
-
-That is it.
-
-
-if you have any problem or question, please send email to iamkaihu@gmail.com
