@@ -80,16 +80,16 @@ public void test1() {
 
 or
 
-@RunIf(value = HTTPChecker.class, arguments = {"http://localhost", "8080"})
+//5 seconds as timeout
+@RunIf(value = HTTPChecker.class, arguments = {"http://www.google.com", "5000"})
 @Test
-public void test2() {
+public void test1() {
 
 }
 
-
 }}}
 
-it will only be ran when the http://www.google.com or http://localhost:8080 is reachable or not.
+it will only be ran when the http://www.google.com is reachable.
 
 * SocketChecker
 
