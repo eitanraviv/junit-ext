@@ -2,7 +2,7 @@
 
  * Renamed the annotation @Prerequiste to @RunIf for better naming.
  * Added the JunitExtSpringRunner to support filtering test in the Spring-Junit test
- * Supported both Junit 4.5 and Junit 4.4 framework
+ * Supported both the Junit 4.5 and Junit 4.4 framework
 
 ===0.7===
 
