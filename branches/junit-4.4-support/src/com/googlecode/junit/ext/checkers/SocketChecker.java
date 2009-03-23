@@ -1,6 +1,7 @@
 package com.googlecode.junit.ext.checkers;
 
 import java.net.Socket;
+import java.net.InetSocketAddress;
 
 public class SocketChecker implements Checker {
     private String host;
@@ -18,7 +19,9 @@ public class SocketChecker implements Checker {
     public boolean satisfy() {
         Socket socket = null;
         try {
-            socket = new Socket(host, port);
+            Socket sock = new Socket();
+            sock.bind(null);
+            sock.connect(new InetSocketAddress(host, port), 10000);
             return true;
         } catch (Exception e) {
             return false;
