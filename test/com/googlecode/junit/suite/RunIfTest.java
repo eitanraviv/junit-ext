@@ -47,6 +47,22 @@ public class RunIfTest {
     }
 
     @Test
+    public void shouldOnlyIgnoreAllTestCases() throws Exception {
+        JunitExtRunner awareClassRunner = new JunitExtRunner(TestCasesOnIgnoringClass.class);
+        awareClassRunner.run(runNotifier);
+        assertThat(countListener.count(), is(0));
+        assertThat(testResultListener.isPassed(), is(true));
+    }
+
+    @Test
+    public void shouldOnlyRunTestCasesWhenClassIsNotIgnored() throws Exception {
+        JunitExtRunner awareClassRunner = new JunitExtRunner(TestCasesOnIgnoringClassAndMethod.class);
+        awareClassRunner.run(runNotifier);
+        assertThat(countListener.count(), is(1));
+        assertThat(testResultListener.isPassed(), is(true));
+    }
+
+    @Test
     public void shouldOnlyRunTestCasesWhenAssocatiedAppsInstalled() throws Exception {
         int installedAppsCount = getAppsInstalledCount();
         JunitExtRunner awareClassRunner = new JunitExtRunner(
