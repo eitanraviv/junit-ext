@@ -3,7 +3,7 @@
  * Added the Class level filtering, patch was contributed by Astrid Deschenes.
 
 ===1.0-RC-2===
- * Fixed the timeout problem of SocketChecker and HttpChecker, patch is contributed by Chris Turner.
+ * Fixed the timeout problem of SocketChecker and HttpChecker, patch was contributed by Chris Turner.
 
 ===1.0-RC-1===
 
