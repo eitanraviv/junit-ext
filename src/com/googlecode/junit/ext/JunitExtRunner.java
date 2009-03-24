@@ -18,12 +18,15 @@ import java.util.ArrayList;
 import com.googlecode.junit.ext.checkers.Checker;
 
 public class JunitExtRunner extends JUnit4ClassRunner {
+    private boolean shouldRunTest4Class;
+
     public JunitExtRunner(Class<?> klass) throws InitializationError {
         super(klass);
+        shouldRunTest4Class = isPrerequisiteSatisfiedForClass(klass);
     }
 
     protected void invokeTestMethod(Method method, RunNotifier notifier) {
-        if (isPrereuisitSatisfied(method)) {
+        if (shouldRunTest4Class && isPrereuisitSatisfied(method)) {
             Description description = methodDescription(method);
             Object test = createTest(notifier, description);
             if (test == null) {
@@ -128,19 +131,7 @@ public class JunitExtRunner extends JUnit4ClassRunner {
         }
         Class<? extends Checker> prerequisiteChecker = resource.value();
         try {
-            String[] arguments = resource.arguments();
-            Checker checker;
-            if (isArgumentNotProvided(arguments)) {
-                checker = prerequisiteChecker.newInstance();
-            } else {
-                if (arguments.length == 1) {
-                    Constructor<? extends Checker> constructor = prerequisiteChecker.getConstructor(String.class);
-                    checker = constructor.newInstance(arguments[0]);
-                } else {
-                    Constructor<? extends Checker> constructor = prerequisiteChecker.getConstructor(String[].class);
-                    checker = constructor.newInstance(new Object[]{arguments});
-                }
-            }
+            Checker checker = instantiateChecker(resource, prerequisiteChecker);
             return checker.satisfy();
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -150,7 +141,6 @@ public class JunitExtRunner extends JUnit4ClassRunner {
     private boolean isArgumentNotProvided(String[] argument) {
         return argument == null || argument.length == 0;
     }
-
 
     public Object createTest(RunNotifier notifier, Description description) {
         Object test = null;
@@ -171,11 +161,44 @@ public class JunitExtRunner extends JUnit4ClassRunner {
         return test;
     }
 
+
     private void testAborted(RunNotifier notifier, Description description,
                              Throwable e) {
         notifier.fireTestStarted(description);
         notifier.fireTestFailure(new Failure(description, e));
         notifier.fireTestFinished(description);
+    }
+
+    public boolean isPrerequisiteSatisfiedForClass(Class<?> klass) {
+        RunIf resource = klass.getAnnotation(RunIf.class);
+        if (resource == null) {
+            return true;
+
+        }
+        Class<? extends Checker> prerequisiteChecker = resource.value();
+        try {
+            Checker checker = instantiateChecker(resource, prerequisiteChecker);
+            return checker.satisfy();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private Checker instantiateChecker(RunIf resource, Class<? extends Checker> prerequisiteChecker) throws Exception {
+        String[] arguments = resource.arguments();
+        Checker checker;
+        if (isArgumentNotProvided(arguments)) {
+            checker = prerequisiteChecker.newInstance();
+        } else {
+            if (arguments.length == 1) {
+                Constructor<? extends Checker> constructor = prerequisiteChecker.getConstructor(String.class);
+                checker = constructor.newInstance(arguments[0]);
+            } else {
+                Constructor<? extends Checker> constructor = prerequisiteChecker.getConstructor(String[].class);
+                checker = constructor.newInstance(new Object[]{arguments});
+            }
+        }
+        return checker;
     }
 
 }
