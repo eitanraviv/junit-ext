@@ -1,15 +1,13 @@
 package com.googlecode.junit.ext.checkers;
 
-import com.googlecode.junit.ext.checkers.Checker;
-
-import java.net.Socket;
 import java.net.InetSocketAddress;
+import java.net.Socket;
 
-public class SocketChecker implements Checker {
+public class SocketIsOpened implements Checker {
     private String host;
     private Integer port;
 
-    public SocketChecker(String[] args) {
+    public SocketIsOpened(String[] args) {
         this.host = args[0];
         this.port = Integer.valueOf(args[1]);
     }

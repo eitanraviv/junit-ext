@@ -3,24 +3,24 @@ package com.googlecode.junit.ext.checkers;
 import org.junit.runner.RunWith;
 import org.junit.Test;
 import com.googlecode.junit.ext.*;
-import com.googlecode.junit.ext.checkers.OSChecker;
+import com.googlecode.junit.ext.checkers.RunningOnTargetOS;
 
 @RunWith(JunitExtRunner.class)
 @RunIf(value = NeverSatisfiedChecker.class)
 public class TestCasesOnIgnoringClass {
     @Test
-    @RunIf(value = OSChecker.class, arguments = OSChecker.MAC)
+    @RunIf(value = RunningOnTargetOS.class, arguments = RunningOnTargetOS.MAC)
     public void shouldRunOnMac() throws Exception {
     }
 
     @Test
-    @RunIf(value = OSChecker.class, arguments = OSChecker.WINDOWS)
+    @RunIf(value = RunningOnTargetOS.class, arguments = RunningOnTargetOS.WINDOWS)
     public void shouldRunOnWindows() throws Exception {
 
     }
 
     @Test
-    @RunIf(value = OSChecker.class, arguments = OSChecker.LINUX)
+    @RunIf(value = RunningOnTargetOS.class, arguments = RunningOnTargetOS.LINUX)
     public void shouldRunOnLinux() throws Exception {
     }
 }

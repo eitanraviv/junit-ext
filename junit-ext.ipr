@@ -272,5 +272,23 @@
     <mapping directory="" vcs="svn" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
+  <component name="libraryTable">
+    <library name="junit-4.4">
+      <CLASSES>
+        <root url="file://$PROJECT_DIR$/lib/junit-4.4" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+      <jarDirectory url="file://$PROJECT_DIR$/lib/junit-4.4" recursive="false" />
+    </library>
+    <library name="junit-4.5">
+      <CLASSES>
+        <root url="file://$PROJECT_DIR$/lib/junit-4.5" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+      <jarDirectory url="file://$PROJECT_DIR$/lib/junit-4.5" recursive="false" />
+    </library>
+  </component>
 </project>
 

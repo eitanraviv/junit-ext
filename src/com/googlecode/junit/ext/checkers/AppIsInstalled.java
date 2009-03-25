@@ -1,11 +1,9 @@
 package com.googlecode.junit.ext.checkers;
 
-import com.googlecode.junit.ext.checkers.Checker;
-
-public class AppsInstalledChecker implements Checker {
+public class AppIsInstalled implements Checker {
     private final String command;
 
-    public AppsInstalledChecker(String command) {
+    public AppIsInstalled(String command) {
         this.command = command;
     }
 
