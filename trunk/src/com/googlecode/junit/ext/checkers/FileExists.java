@@ -1,13 +1,11 @@
 package com.googlecode.junit.ext.checkers;
 
-import com.googlecode.junit.ext.checkers.Checker;
-
 import java.io.File;
 
-public class FileChecker implements Checker {
+public class FileExists implements Checker {
     private String filePath;
 
-    public FileChecker(String filePath) {
+    public FileExists(String filePath) {
         this.filePath = filePath;
     }
 

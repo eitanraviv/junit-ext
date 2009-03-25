@@ -2,6 +2,7 @@
 <project name="junit-ext" default="all">
 
 
+    <property name="junit.version" value="junit-4.5"/>
     <property file="junit-ext.properties"/>
     <!-- Uncomment the following property if no tests compilation is needed -->
     <!--
@@ -69,21 +70,21 @@
     </path>
 
     <path id="junit-ext.module.classpath">
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5-src.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/spring.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/spring-test.jar"/>
+        <fileset dir="${module.junit-ext.basedir}/lib/${junit.version}">
+            <include name="**/*.jar"/>
+        </fileset>
         <pathelement location="${module.junit-ext.basedir}/lib/commons-logging-1.1.1.jar"/>
         <pathelement location="${module.junit-ext.basedir}/lib/log4j-1.2.12.jar"/>
     </path>
 
+
+
     <path id="junit-ext.runtime.module.classpath">
         <pathelement location="${junit-ext.output.dir}"/>
         <pathelement location="${junit-ext.testoutput.dir}"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/junit-4.5-src.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/spring.jar"/>
-        <pathelement location="${module.junit-ext.basedir}/lib/spring-test.jar"/>
+        <fileset dir="${module.junit-ext.basedir}/lib/${junit.version}">
+            <include name="**/*.jar"/>
+        </fileset>
         <pathelement location="${module.junit-ext.basedir}/lib/commons-logging-1.1.1.jar"/>
         <pathelement location="${module.junit-ext.basedir}/lib/log4j-1.2.12.jar"/>
     </path>
@@ -103,11 +104,6 @@
         </dirset>
     </path>
 
-    <path id="junit-ext.module.test.sourcepath">
-        <dirset dir="${module.junit-ext.basedir}">
-            <include name="test"/>
-        </dirset>
-    </path>
 
 
     <target name="compile.module.junit-ext" depends="compile.module.junit-ext.production,compile.module.junit-ext.tests"
@@ -135,12 +131,11 @@
     <target name="compile.module.junit-ext.tests" depends="compile.module.junit-ext.production"
             description="compile module junit-ext; test classes" unless="skip.tests">
         <mkdir dir="${junit-ext.testoutput.dir}"/>
-        <javac destdir="${junit-ext.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+        <javac srcdir="${module.junit-ext.basedir}" destdir="${junit-ext.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
                memorymaximumsize="${compiler.max.memory}" target="1.5" fork="true" >
             <compilerarg line="${compiler.args.junit-ext}"/>
             <classpath refid="junit-ext.module.classpath"/>
             <classpath location="${junit-ext.output.dir}"/>
-            <src refid="junit-ext.module.test.sourcepath"/>
             <patternset refid="excluded.from.compilation.junit-ext"/>
         </javac>
 
@@ -154,16 +149,15 @@
     </target>
 
     <target name="test.module.junit-ext">
-
-        <junit printsummary="yes" dir="${module.junit-ext.basedir}" haltonfailure="true" fork="true" forkMode="once">
+        <mkdir dir="target/testoutput"/>
+        <junit printsummary="yes" dir="${module.junit-ext.basedir}" haltonfailure="false" fork="true" forkMode="once">
             <classpath refid="junit-ext.runtime.module.classpath"></classpath>
             <formatter type="brief" usefile="false"/>
             <formatter type="xml"/>
 
-
             <batchtest todir="${target}/testoutput">
                 <fileset dir="${module.junit-ext.basedir}/test">
-                    <include name="**/*Test.java"></include>
+                    <include name="**/suite/**/*Test.java"></include>
                 </fileset>
             </batchtest>
         </junit>

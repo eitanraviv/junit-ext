@@ -9,7 +9,7 @@ public class SocketCheckerTest {
     @Test
     public void shouldReturnTrueWhenResourceIsReachable() {
         long start = System.currentTimeMillis();
-        SocketChecker checker = new SocketChecker(new String[]{"167.18.7.51", "8153"});
+        SocketIsOpened checker = new SocketIsOpened(new String[]{"167.18.7.51", "8153"});
         long end = System.currentTimeMillis();
         assertThat(checker.satisfy(), is(false));
         assertThat(end - start <= 10000, is(true));

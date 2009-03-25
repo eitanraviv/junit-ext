@@ -1,19 +1,19 @@
 package com.googlecode.junit.ext.checkers;
 
+import static java.lang.Integer.parseInt;
 import java.net.URL;
 import java.net.URLConnection;
-import static java.lang.Integer.parseInt;
 
 
-public class HttpChecker implements Checker {
+public class URLIsReachable implements Checker {
     private String urlString;
     private int milli = 10 * 1000;
 
-    public HttpChecker(String url) {
+    public URLIsReachable(String url) {
         this.urlString = url;
     }
 
-    public HttpChecker(String[] args) {
+    public URLIsReachable(String[] args) {
         this.urlString = args[0];
         this.milli = parseInt(args[1]);
     }

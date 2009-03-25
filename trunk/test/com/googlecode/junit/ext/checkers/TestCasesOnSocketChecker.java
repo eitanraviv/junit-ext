@@ -8,13 +8,13 @@ import org.junit.runner.RunWith;
 @RunWith(JunitExtRunner.class)
 public class TestCasesOnSocketChecker {
     @Test
-    @RunIf(value = SocketChecker.class, arguments = {"www.google.com", "80"})
+    @RunIf(value = SocketIsOpened.class, arguments = {"www.google.com", "80"})
     public void shouldRun() throws Exception {
     }
 
 
     @Test
-    @RunIf(value = SocketChecker.class, arguments = {"www.somewhereinthere.bj", "80"})
+    @RunIf(value = SocketIsOpened.class, arguments = {"www.somewhereinthere.bj", "80"})
     public void shouldNotRun() throws Exception {
     }
 }

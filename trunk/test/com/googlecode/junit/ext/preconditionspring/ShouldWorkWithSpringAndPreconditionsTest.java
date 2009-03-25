@@ -11,7 +11,6 @@ import static org.hamcrest.core.IsNull.nullValue;
 import com.googlecode.junit.ext.*;
 import com.googlecode.junit.ext.checkers.NeverSatisfiedChecker;
 import com.googlecode.junit.ext.checkers.AlwaysSatisfiedChecker;
-import com.googlecode.junit.ext.preconditions.FailedToTearDown;
 import com.googlecode.junit.ext.preconditions.SuccessfullyRan;
 
 import java.util.Map;
