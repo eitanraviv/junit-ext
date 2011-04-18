@@ -16,64 +16,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.4/junit-4.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.aspects-3.0.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.expression-3.0.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.beans-3.0.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/junit-4.5-src.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.context-3.0.0.M2.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring-test.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/suite/PreconditionsWithSpringSupportTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.iml" afterPath="$PROJECT_DIR$/junit-ext.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/asm-commons-2.2.3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnIgnoringClass.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnIgnoringClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/asm-2.2.3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnSocketChecker.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnSocketChecker.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/SocketChecker.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/applicationContext-repository.xml" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/applicationContext-repository.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/HttpCheckerTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/HttpCheckerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.jdbc-3.0.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/junit-4.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.web.servlet-3.0.0.M2.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spring.jar" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/antlr-3.0.1.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/AppsInstalledChecker.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/AppIsInstalled.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditionspring/ShouldWorkWithSpringAndPreconditionsTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditionspring/ShouldWorkWithSpringAndPreconditionsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.transaction-3.0.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.oxm-3.0.0.M2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnIgnoringClassAndMethod.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnIgnoringClassAndMethod.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/URLIsReachable.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/junit-4.5-src.jar" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.instrument-3.0.0.M2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.ipr" afterPath="$PROJECT_DIR$/junit-ext.ipr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.integration-tests-3.0.0.M2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/SocketCheckerTest.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/SocketCheckerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.context.support-3.0.0.M2.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/OSChecker.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/RunningOnTargetOS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.instrument.classloading-3.0.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.web.portlet-3.0.0.M2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/demo/TestMyFunc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/demo/A.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/demo/Calculator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/demo/CVSRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/demo/SvnRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.iws" afterPath="$PROJECT_DIR$/junit-ext.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.web-3.0.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.aop-3.0.0.M2.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/junit-4.5.jar" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/SocketIsOpened.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnDifferentOS.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnDifferentOS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.core-3.0.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.4/spring.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.orm-3.0.0.M2.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnTargetAppExist.java" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnTargetAppExist.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.jms-3.0.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.4/spring-test.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/FileChecker.java" afterPath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/FileExists.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.5/org.springframework.test-3.0.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit-4.4/junit-4.4-src.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/HttpChecker.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/demo/InvalidArgumentException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/demo/MyDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/demo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/demo/MyChecker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/googlecode/junit/demo/CalculatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junit-ext.ipr" afterPath="$PROJECT_DIR$/junit-ext.ipr" />
     </list>
-    <ignored path=".idea/workspace.xml" />
     <ignored path="junit-ext.iws" />
+    <ignored path=".idea/workspace.xml" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="Commander">
@@ -132,7 +90,17 @@
     <favorites_list name="junit-ext" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/demo/Calculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="23" selection-start="574" selection-end="574" vertical-scroll-proportion="0.59322035">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -172,20 +140,6 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
       </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit-ext" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit-ext" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit-ext" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
     </subPane>
   </component>
   <component name="ProjectReloadState">
@@ -218,26 +172,27 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="false" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="false" />
-    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="dynamic.classpath" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="project.scopes" />
+    <property name="options.lastSelected" value="File.Encoding" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
+    <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.googlecode.junit.demo" />
       <recent name="com.googlecode.junit.ext.spring" />
       <recent name="com.googlecode.junit.ext.checkers" />
       <recent name="com.googlecode.junit.ext.preconditionspring" />
       <recent name="com.googlecode.junit.ext" />
-      <recent name="com.googlecode.junit.ext.helpers" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.googlecode.junit.demo" />
       <recent name="com.googlecode.junit.ext.helpers" />
       <recent name="com.googlecode.junit.ext" />
       <recent name="Job" />
@@ -247,24 +202,18 @@
     <RUBY_DOC NAME="DEFAULTS" VALUE="true" />
     <RUBY_DOC NAME="NUMBER" VALUE="0" />
   </component>
-  <component name="RunManager" selected="JUnit.com.googlecode.junit.suite">
-    <tempConfiguration default="false" name="com.googlecode.junit.suite" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
-      <module name="junit-ext" />
+  <component name="RunManager" selected="Application.Calculator">
+    <tempConfiguration default="false" name="Calculator" type="Application" factoryName="Application" enabled="false" merge="false" runner="emma">
+      <option name="MAIN_CLASS_NAME" value="com.googlecode.junit.demo.Calculator" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.googlecode.junit.suite" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
+      <module name="junit-ext" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -326,8 +275,42 @@
       <module name="" />
       <envs />
     </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Ruby test">
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_CLASS_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
+    </configuration>
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <module name="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="[none]" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="-fs" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUN_SPECS_SEPARATELY" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+    </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.com.googlecode.junit.suite" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Calculator" />
     </list>
     <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="" />
@@ -357,40 +340,6 @@
       <method>
         <option name="Make" value="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby test">
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="MODULE_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_CLASS_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
-    </configuration>
-    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="MODULE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="[none]" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="-fs" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUN_SPECS_SEPARATELY" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_COLOURED_OUTPUT_ENABLED" VALUE="true" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -443,7 +392,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1436" height="878" extended-state="0" />
+    <frame x="36" y="22" width="1436" height="878" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" />
@@ -545,123 +494,119 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtRunner.java">
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnTargetAppExist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+        <state line="12" column="87" selection-start="456" selection-end="456" vertical-scroll-proportion="0.13559322">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/HttpCheckerTest.java">
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnSocketChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="55" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="232" selection-end="232" vertical-scroll-proportion="0.082530946">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/SampleRepository.java">
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnIgnoringClassAndMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="118" selection-end="118" vertical-scroll-proportion="0.084745765">
+        <state line="9" column="13" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/checkers/TestCasesOnDifferentOS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="57" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/AppIsInstalled.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/demo/CVSRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/demo/TestMyFunc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/demo/SvnRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/ShouldFilterOnClassLevelSpringTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/checkers/RunningOnTargetOS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="34" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+        <state line="15" column="56" selection-start="401" selection-end="503" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/applicationContext-repository.xml">
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/demo/MyDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="75" selection-start="862" selection-end="862" vertical-scroll-proportion="-6.857143">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/suite/PreconditionsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="41" selection-start="2903" selection-end="2903" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditionspring/SampleComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/ShouldFailedTestAndContinueRanAllTeardownTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditions/ShouldFailedTestAndStopRunningAtFailedPreconditionsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditionspring/applicationContext-preconditionspring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="62" selection-start="848" selection-end="871" vertical-scroll-proportion="-6.857143">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/googlecode/junit/ext/JunitExtSpringRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="633" selection-end="633" vertical-scroll-proportion="0.084745765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/suite/JunitExtSpringRunnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="65" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/spring/ShouldWorkWithSpringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="20" selection-start="1857" selection-end="1857" vertical-scroll-proportion="1.7368422">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/ext/preconditionspring/ShouldWorkWithSpringAndPreconditionsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
+        <state line="15" column="25" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/demo/MyChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/demo/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.38764045">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/demo/InvalidArgumentException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="53" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/demo/CalculatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="30" selection-start="1151" selection-end="1175" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/googlecode/junit/demo/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="23" selection-start="574" selection-end="574" vertical-scroll-proportion="0.59322035">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -682,7 +627,13 @@
           <value>
             <UIState>
               <option name="proportions">
-                <SplitterProportionsDataImpl />
+                <SplitterProportionsDataImpl>
+                  <option name="proportions">
+                    <list>
+                      <option value="0.2" />
+                    </list>
+                  </option>
+                </SplitterProportionsDataImpl>
               </option>
               <option name="lastEditedConfigurable" value="Default|IDE Profiles" />
             </UIState>
@@ -720,7 +671,13 @@
           <value>
             <UIState>
               <option name="proportions">
-                <SplitterProportionsDataImpl />
+                <SplitterProportionsDataImpl>
+                  <option name="proportions">
+                    <list>
+                      <option value="0.2" />
+                    </list>
+                  </option>
+                </SplitterProportionsDataImpl>
               </option>
               <option name="lastEditedConfigurable" value="Default|IDE Profiles" />
             </UIState>
